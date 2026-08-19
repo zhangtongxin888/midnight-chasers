@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Midnight Chasers Wiki</title>
+  <desc id="desc">Neon night highway artwork for the independent beginner guide</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#111a2a"/><stop offset="1" stop-color="#080b10"/></linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#171d24"/><stop offset="1" stop-color="#05070a"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <g opacity=".12" stroke="#fff"><path d="M0 90h1200M0 180h1200M0 270h1200M0 360h1200M0 450h1200M100 0v630M200 0v630M300 0v630M400 0v630M500 0v630M600 0v630M700 0v630M800 0v630M900 0v630M1000 0v630M1100 0v630"/></g>
+  <path d="M500 260h200l330 370H170z" fill="url(#road)"/>
+  <path d="M515 270 255 630M685 270l260 360" stroke="#c8ff00" stroke-width="8" filter="url(#glow)"/>
+  <path d="m600 300-30 120h60zm0 170-48 160h96z" fill="#fff" opacity=".72"/>
+  <text x="75" y="145" fill="#c8ff00" font-family="Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="7">INDEPENDENT PLAYER GUIDE</text>
+  <text x="72" y="260" fill="#f4f6f3" font-family="Arial Black,Arial,sans-serif" font-size="90" font-style="italic" font-weight="900">MIDNIGHT</text>
+  <text x="72" y="350" fill="none" stroke="#c8ff00" stroke-width="2" font-family="Arial Black,Arial,sans-serif" font-size="90" font-style="italic" font-weight="900">CHASERS</text>
+  <text x="77" y="408" fill="#a7b0ba" font-family="Arial,sans-serif" font-size="29">BEGINNER GUIDE • CODES • CASH BOOSTS</text>
+</svg>
