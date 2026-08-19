@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "run_id": "midnight-chasers-20260819-224500",
+  "status": "complete",
+  "game": {
+    "official_name": "Midnight Chasers: Highway Racing",
+    "domain": "midnight-chasers.wiki"
+  },
+  "provider": {
+    "name": "Kimi",
+    "model": "kimi-code/k3",
+    "generated_at": "2026-08-20T00:09:41+08:00"
+  },
+  "research_approval_sha256": "e5c36bffb2b43a1f223cfea780af77ccbf7b9921d4d09efb264083ceddbe42ff",
+  "candidate_path": "/Users/zhangtongxin/sites/midnight-chasers-kimi-candidate",
+  "design_direction": {
+    "name": "Night Run Telemetry",
+    "summary": "A dark editorial driving guide with acid-lime wayfinding, condensed motorsport typography, a CSS-built night highway scene, and fact status labels that make the starter route easy to scan.",
+    "tone": [
+      "fast",
+      "precise",
+      "nighttime",
+      "player-first"
+    ],
+    "visual_system": {
+      "palette": {
+        "ink": "#07090B",
+        "panel": "#0D1013",
+        "paper": "#F4F6F3",
+        "acid": "#C8FF00",
+        "cyan": "#35E6FF",
+        "muted": "#99A1A7"
+      },
+      "type": {
+        "display": "Barlow Condensed",
+        "body": "DM Sans"
+      },
+      "motifs": [
+        "highway lane geometry",
+        "telemetry status chips",
+        "cut-corner cards",
+        "outlined italic headlines"
+      ]
+    }
+  },
+  "information_architecture": [
+    {
+      "id": "top",
+      "label": "Hero",
+      "purpose": "Orient the player and route them to the on-site beginner guide before any external play link."
+    },
+    {
+      "id": "beginner-guide",
+      "label": "First 10 Minutes",
+      "purpose": "Five-step starter route based on approved game identity, group boost, code redemption, vehicle types, and play modes."
+    },
+    {
+      "id": "codes",
+      "label": "Current Code",
+      "purpose": "Show the time-scoped official-description code and redemption steps with expiry cautions."
+    },
+    {
+      "id": "experience",
+      "label": "Choose Your Line",
+      "purpose": "Summarize approved driving, racing, exploring, and meetup activities."
+    },
+    {
+      "id": "boosts",
+      "label": "Cash Boosts",
+      "purpose": "Compare the approved 25% community and 50% VIP claims without asserting price or stacking."
+    },
+    {
+      "id": "pit-wall",
+      "label": "Common Mistakes",
+      "purpose": "Warn about code capitalization, whitespace, expiry, and unsourced specifics."
+    },
+    {
+      "id": "faq",
+      "label": "FAQ",
+      "purpose": "Answer identity, code menu, failure, VIP, and vehicle-choice questions concisely."
+    }
+  ],
+  "cta_policy": {
+    "largest_above_fold_cta": {
+      "label": "Start the beginner guide",
+      "href": "#beginner-guide",
+      "destination_type": "internal"
+    },
+    "roblox_cta": {
+      "label": "Open on Roblox",
+      "href": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "visual_priority": "secondary"
+    }
+  },
+  "content_safety": {
+    "time_scoped_claims": [
+      "ThanksFor940k is labeled checked Aug 19, 2026.",
+      "The 960,000-like next milestone is labeled as the value shown at the time of checking."
+    ],
+    "omitted_claims": [
+      "Cash customisation and main-currency claim",
+      "Discord as a typical code-posting source",
+      "Complete multi-map roster",
+      "100-million-visits official post claim",
+      "VIP price or boost stacking",
+      "Starter-car names and prices",
+      "Diamonds currency"
+    ]
+  },
+  "implementation": {
+    "framework": "Next.js App Router",
+    "language": "TypeScript",
+    "styling": "CSS custom properties and responsive component styles",
+    "routes": [
+      "/"
+    ],
+    "responsive_breakpoints": [
+      "1040px",
+      "820px",
+      "560px"
+    ],
+    "accessibility": [
+      "semantic sections and navigation",
+      "visible focus states",
+      "native FAQ disclosure elements",
+      "reduced-motion support",
+      "decorative illustration labeled without relying on color alone"
+    ],
+    "files": [
+      "app/layout.tsx",
+      "app/page.tsx",
+      "app/globals.css",
+      "app/next-types.d.ts",
+      "components/SiteHeader.tsx",
+      "components/NightDriveVisual.tsx",
+      "components/GuideTimeline.tsx",
+      "components/CodeCopy.tsx",
+      "components/FaqList.tsx",
+      "components/Icons.tsx",
+      "public/road-mark.svg",
+      "package.json",
+      "next.config.ts",
+      "tsconfig.json"
+    ]
+  }
+}

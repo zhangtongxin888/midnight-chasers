@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "run_id": "midnight-chasers-20260819-224500",
+  "game": {
+    "official_name": "Midnight Chasers: Highway Racing",
+    "domain": "midnight-chasers.wiki"
+  },
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-08-19T15:55:23Z",
+  "approved_fact_ids": [
+    "fact-001",
+    "fact-002",
+    "fact-003",
+    "fact-004",
+    "fact-005",
+    "fact-006",
+    "fact-007",
+    "fact-008",
+    "fact-009",
+    "fact-010",
+    "fact-011",
+    "fact-013",
+    "fact-014",
+    "fact-015",
+    "fact-016",
+    "fact-017",
+    "fact-019",
+    "fact-020",
+    "fact-021",
+    "fact-024"
+  ],
+  "rejected_facts": [
+    {
+      "id": "fact-012",
+      "reason": "The Eurogamer source supports earning Cash by driving and spending it on cars, but it does not support the claim that Cash is used for vehicle customisation or establish that it is the only/main currency. The compound claim is therefore not approved as written."
+    },
+    {
+      "id": "fact-018",
+      "reason": "Pocket Tactics supports looking for codes on the developer's X account and Roblox community and separately confirms a community Discord for news, but it does not say that new codes are typically posted in that Discord. The compound claim overstates its listed source."
+    },
+    {
+      "id": "fact-022",
+      "reason": "The official post confirms that one reward worked only on the Tokyo map, but that wording alone does not independently establish a complete multi-map structure. The claim's inference that the experience has more than one map is not approved."
+    },
+    {
+      "id": "fact-023",
+      "reason": "The listed X status returned a page without the claimed post content during Codex review. A secondary guide mentions the code and reward, but that does not verify the fact record's claim about the official creator post from its listed source."
+    }
+  ],
+  "notes": [
+    "Codex independently opened the listed HTTPS sources through the configured system proxy; Grok's self-reported verification was not treated as approval.",
+    "The official game identity, root place ID, universe ID, developer group, group ownership, description, classification, server cap, dates, and vote response were cross-checked against live Roblox pages and APIs.",
+    "The minimum beginner-guide gate is exceeded: approved facts include the traffic-driving loop, vehicle types, racing/exploration/meetups, the 25% group cash boost, the 50% VIP cash boost, code redemption steps, HUD location, and code-entry/expiry cautions.",
+    "The current code, next like milestone, update timestamp, and vote totals are mutable and must retain their 2026-08-19 check context rather than be presented as evergreen facts.",
+    "No Cash customisation claim, Discord code-posting claim, inferred complete map structure, or inaccessible official 100-million-visits post is approved."
+  ]
+}

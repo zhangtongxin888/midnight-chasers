@@ -1,0 +1,351 @@
+{
+  "schema_version": 1,
+  "run_id": "midnight-chasers-20260819-224500",
+  "game": {
+    "official_name": "Midnight Chasers: Highway Racing",
+    "domain": "midnight-chasers.wiki",
+    "roblox_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+    "place_id": "13822562292",
+    "universe_id": "4793836769",
+    "developer": "Midnight In-dev"
+  },
+  "provider": {
+    "name": "Grok",
+    "model": "grok-4.6",
+    "generated_at": "2026-08-19T15:47:50Z"
+  },
+  "status": "complete",
+  "facts": [
+    {
+      "id": "fact-001",
+      "category": "identity",
+      "subject": "official_game",
+      "claim": "The official Roblox experience is listed as Midnight Chasers: Highway Racing at place 13822562292; the in-page description addresses players as Welcome to Midnight Chasers.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-002",
+      "category": "identity",
+      "subject": "developer",
+      "claim": "The Roblox creator credit for the experience is the community Midnight In-dev (community id 16528477).",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-003",
+      "category": "identity",
+      "subject": "developer",
+      "claim": "The Midnight In-dev group description states it is the official midnight chasers development group; the group owner is Roblox user MNC_Holdingacc.",
+      "source_url": "https://groups.roblox.com/v1/groups/16528477",
+      "source_type": "roblox",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-004",
+      "category": "identity",
+      "subject": "place_id",
+      "claim": "The root place id of the experience is 13822562292, matching the public /games/13822562292 URL.",
+      "source_url": "https://games.roblox.com/v1/games?universeIds=4793836769",
+      "source_type": "roblox",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-005",
+      "category": "identity",
+      "subject": "universe_id",
+      "claim": "The Roblox universe id for place 13822562292 is 4793836769.",
+      "source_url": "https://apis.roblox.com/universes/v1/places/13822562292/universe",
+      "source_type": "roblox",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-006",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Official copy describes Midnight Chasers as a no-hesi / highway cut-up game whose goal is to swerve in and out of traffic with supercars, hypercars, or regular cars; players may cut up through traffic or take a regular drive.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-007",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "The experience advertises a large vehicle choice that includes cars, motorcycles, and more.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-008",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Official features listed on the game page include racing at high speed, exploring highways and cities with friends, and hosting meetups to showcase vehicles.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-009",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "Joining the official Midnight In-dev group is advertised as granting a 25% cash boost.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-010",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "A VIP Gamepass is advertised as granting a 50% cash boost.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-011",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "Roblox Premium members are advertised as receiving an in-game tag.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-012",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "Cash is the main in-game currency used to buy and customise cars; players earn it by driving through traffic and then spend it on more expensive vehicles.",
+      "source_url": "https://www.eurogamer.net/midnight-chasers-codes",
+      "source_type": "secondary",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-013",
+      "category": "update",
+      "subject": "update",
+      "claim": "As of this check, the official game description thanks players for 940,000 likes, names the current code ThanksFor940k, and says the next code is at 960000 likes.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-014",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Promo codes are redeemed in-experience by opening the yellow Store control, choosing the Codes tab, entering a code, and pressing Redeem.",
+      "source_url": "https://www.eurogamer.net/midnight-chasers-codes",
+      "source_type": "secondary",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-015",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "The Store control used to redeem codes is a yellow icon on the left side of the HUD, underneath Spawn.",
+      "source_url": "https://www.pockettactics.com/midnight-chasers-codes",
+      "source_type": "secondary",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-016",
+      "category": "mistake",
+      "subject": "mistake",
+      "claim": "Codes can fail if capitalization is wrong or if a leading/trailing space is pasted with the code.",
+      "source_url": "https://www.pockettactics.com/midnight-chasers-codes",
+      "source_type": "secondary",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-017",
+      "category": "mistake",
+      "subject": "mistake",
+      "claim": "Midnight Chasers codes expire; some milestone codes last weeks and others only a few days, so old codes should not be assumed to work.",
+      "source_url": "https://www.pockettactics.com/midnight-chasers-codes",
+      "source_type": "secondary",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-018",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "New codes are typically posted on the official X account @MidnightIndev and in the Midnight In-dev Roblox community, as well as in the community Discord.",
+      "source_url": "https://www.pockettactics.com/midnight-chasers-codes",
+      "source_type": "secondary",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-019",
+      "category": "identity",
+      "subject": "developer",
+      "claim": "The X account @MidnightIndev identifies itself as the official Twitter page for the Roblox game Midnight Chasers.",
+      "source_url": "https://x.com/MidnightIndev",
+      "source_type": "creator",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-020",
+      "category": "update",
+      "subject": "update",
+      "claim": "The Roblox Games API reports the universe was created 2023-06-21T21:07:05.223Z and was last updated 2026-08-15T22:05:27.673Z at the time of this check.",
+      "source_url": "https://games.roblox.com/v1/games?universeIds=4793836769",
+      "source_type": "roblox",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-021",
+      "category": "identity",
+      "subject": "official_game",
+      "claim": "Roblox classifies the experience as Simulation / Vehicle Sim (also listed as Town and City), with a maximum of 14 players per server.",
+      "source_url": "https://games.roblox.com/v1/games?universeIds=4793836769",
+      "source_type": "roblox",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-022",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "An official @MidnightIndev holiday code post stated a reward worked only on the Tokyo map, which is evidence that the experience has more than one map and that Tokyo is one of them.",
+      "source_url": "https://x.com/MidnightIndev/status/2003958221799911768",
+      "source_type": "creator",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-023",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "Official creator post for 100 million visits told players to use code ThxFor100Mil for 75,000 in-game cash, confirming cash codes as a progression shortcut.",
+      "source_url": "https://x.com/MidnightIndev/status/1966260182004150539",
+      "source_type": "creator",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-024",
+      "category": "identity",
+      "subject": "official_game",
+      "claim": "At this check the Roblox votes endpoint reported about 947,753 upvotes and 24,464 downvotes for universe 4793836769, consistent with the 940k-like milestone on the game page.",
+      "source_url": "https://games.roblox.com/v1/games/votes?universeIds=4793836769",
+      "source_type": "roblox",
+      "checked_at": "2026-08-19T15:47:50Z",
+      "confidence": "high"
+    }
+  ],
+  "new_player_guide": {
+    "first_10_minutes": [
+      "Open the official experience Midnight Chasers: Highway Racing (Roblox place 13822562292).",
+      "Join the Midnight In-dev group so the advertised 25% cash boost can apply.",
+      "Open the yellow Store control (left HUD, under Spawn), go to Codes, and redeem the current code printed on the official game description (ThanksFor940k at this check).",
+      "Spawn a vehicle and start driving: the listed goal is swerving through traffic, not only sitting still.",
+      "Optionally review the VIP Gamepass if you want the advertised extra 50% cash boost; it is paid and not required to start."
+    ],
+    "core_loop": [
+      "Drive on highways/cities, including cutting through traffic (no-hesi / highway cut-up) or taking a regular drive.",
+      "Earn Cash from driving and related play.",
+      "Spend Cash on additional cars/motorcycles and customisation.",
+      "Race, explore with friends, and showcase vehicles at meetups."
+    ],
+    "progression_path": [
+      "Start with whatever default vehicle the session gives you; no sourced starter-car name/price was confirmed.",
+      "Claim group cash boost, then redeem currently advertised codes before they expire.",
+      "Use Cash to buy faster or preferred vehicles and customisation.",
+      "Consider VIP only as a paid 50% cash-boost option listed by the developer.",
+      "Watch official description, @MidnightIndev, the Roblox group, and Discord for like-milestone codes (next like target listed as 960000 at this check)."
+    ],
+    "common_mistakes": [
+      "Skipping the official Midnight In-dev group and missing the advertised 25% cash boost.",
+      "Typing codes with the wrong case or pasting extra spaces.",
+      "Using expired milestone codes copied from old articles.",
+      "Treating unofficial wikis or third-party code lists as official when they disagree with the game description.",
+      "Assuming every listed secondary-site code still works; lists already conflict on which codes are live."
+    ],
+    "faq": [
+      "What is Midnight Chasers? A Roblox no-hesi / highway cut-up driving experience by Midnight In-dev.",
+      "Where do I play? https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing (place 13822562292, universe 4793836769).",
+      "How do I redeem codes? Store (yellow left HUD control) > Codes > enter code > Redeem.",
+      "What is the current official code? The game description listed ThanksFor940k at this check; it can change after like milestones.",
+      "How do I earn more Cash besides codes? Drive through traffic; group join and VIP are advertised as cash boosts."
+    ]
+  },
+  "keywords": {
+    "primary": [
+      "Midnight Chasers",
+      "Midnight Chasers Highway Racing",
+      "Midnight Chasers Roblox",
+      "midnight-chasers.wiki"
+    ],
+    "secondary": [
+      "no hesi Roblox",
+      "highway cut up",
+      "Midnight In-dev",
+      "Midnight Chasers codes",
+      "ThanksFor940k",
+      "Midnight Chasers cars",
+      "Midnight Chasers Tokyo map"
+    ],
+    "search_intent": [
+      "midnight chasers beginner guide",
+      "midnight chasers how to redeem codes",
+      "midnight chasers cash boost",
+      "midnight chasers wiki",
+      "midnight chasers highway racing place id"
+    ]
+  },
+  "uncertainties": [
+    "Individual creator credit: unofficial Fandom names Revurtics and Hateful, and @MidnightIndev's X bio mentions @HatefulHCBR, @Revurtics, and @Hacreey, but the Roblox By line is the Midnight In-dev group. Roles were not independently verified.",
+    "Public 'official release' date: Roblox Games API created timestamp is 2023-06-21, while unofficial Fandom says official release 13 August 2023. Do not treat either as a hard launch-day fact without more official copy.",
+    "Complete live code list beyond the description's ThanksFor940k. Eurogamer (16 Aug 2026), Pocket Tactics (19 Aug 2026), Pocket Gamer (15 Aug 2026), and Beebom (16 Aug 2026) disagree on whether ThanksFor920k/900k/880k/930k and others are still valid.",
+    "VIP Gamepass Robux price and exact stacking with the group 25% boost were not found on official pages; a YouTube transcript mentioned 200 Robux and was not used.",
+    "Starter vehicle identity, dealership prices, and a full car list were not confirmed from an official source during this pass.",
+    "Full current map roster besides evidence that a Tokyo map existed as of the 24 Dec 2025 official holiday post.",
+    "Exact cash-earn formula, AFK/grinding rules, and whether crashing is penalised. Pocket Gamer advises against crashing into everyone, but that is secondary opinion.",
+    "Beebom mentioned 'diamonds' as a reward type; no official page corroborated a diamonds currency.",
+    "Meaning of the current listing prefix [💨SUSPENSION!]: it may be an update tag, but a suspension gameplay system was not documented from official copy.",
+    "Roblox game-pass catalog endpoints returned empty errors during this pass, so pass inventory beyond the VIP mention in the description is unverified."
+  ],
+  "forbidden_claims": [
+    "Do not treat midnight-chasers.fandom.com as an official wiki or as the same property as midnight-chasers.wiki.",
+    "Do not list a full always-working code table; codes expire and secondary lists already conflict.",
+    "Do not invent starter-car names, prices, or 'best first buy' recommendations.",
+    "Do not state a VIP Robux price.",
+    "Do not claim a diamonds currency.",
+    "Do not credit a single person as the Roblox creator; the listed creator is the Midnight In-dev group.",
+    "Do not confuse this game with Midnight Racing Tokyo or other similarly named driving games.",
+    "Do not copy long passages from the Roblox description or third-party guides into site copy.",
+    "Do not present visit/favorite counts as evergreen; they change continuously."
+  ],
+  "suggested_topics": [
+    "First 10 minutes: join group, redeem the description code, start cutting traffic",
+    "How to redeem Midnight Chasers codes (Store > Codes)",
+    "Cash boosts: 25% group vs 50% VIP",
+    "Core loop: drive / cut up / earn Cash / buy and customise vehicles",
+    "Why codes fail: case, spaces, expiry, unofficial lists",
+    "Official identity: place 13822562292, universe 4793836769, developer Midnight In-dev"
+  ]
+}

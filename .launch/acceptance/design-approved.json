@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "run_id": "midnight-chasers-20260819-224500",
+  "game": {
+    "official_name": "Midnight Chasers: Highway Racing",
+    "domain": "midnight-chasers.wiki"
+  },
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-08-19T16:30:00Z",
+  "candidate_path": "/Users/zhangtongxin/sites/midnight-chasers-kimi-candidate",
+  "candidate_review": {
+    "scope": "Only the current game's app, components, public asset, and framework configuration were present; no .git directory, remote, deployment credential, or cross-game file was found.",
+    "decision": "selective_rewrite",
+    "accepted_direction": [
+      "Night Run Telemetry visual direction",
+      "Internal beginner-guide hero CTA",
+      "First-session timeline",
+      "Codes, driving loop, boosts, mistakes, and FAQ information architecture"
+    ],
+    "rejected_or_replaced": [
+      "The candidate implementation was rewritten in the formal repository to add the advanced route, production SEO, crawl files, security headers, automated checks, and deploy configuration.",
+      "No candidate deployment configuration or generated dependency cache was accepted."
+    ]
+  },
+  "design_package": {
+    "requested_file": ".launch/design/kimi-design-v1.json",
+    "requested_sha256": "a4d6f1edfe9a0199787d4d1c6c8dc27a7c50fcdf1ecdd877d2cf8dc14ca28d44",
+    "requested_validation": "failed: design primary CTA must lead to the beginner guide",
+    "actual_fallback_file": ".launch/design/codex-design-v1.json",
+    "actual_fallback_sha256": "11c4b581da3b8e91ba1788d804ef8a4102960ac2d59f725d762cd6b9933ac724",
+    "actual_fallback_validation": "passed",
+    "fallback_reason": "The Kimi CLI exited immediately in the design task and its design file did not satisfy the handoff schema. The recorded Codex fallback package passed the same validator."
+  },
+  "viewports": {
+    "375": {
+      "status": "blocked",
+      "static_review": "CSS mobile breakpoint at 560px is present; navigation collapses, hero actions stack, timeline becomes two columns, and cards become one column.",
+      "reason": "The coordinator withheld the batch browser lock and explicitly prohibited opening Chrome or any browser."
+    },
+    "768": {
+      "status": "blocked",
+      "static_review": "CSS tablet breakpoint at 820px is present; hero and content sections collapse to one column while core navigation remains reachable through page links.",
+      "reason": "The coordinator withheld the batch browser lock and explicitly prohibited opening Chrome or any browser."
+    },
+    "1440": {
+      "status": "blocked",
+      "static_review": "The 1180px content shell, two-column hero, three-card core loop, and two-column advanced route were reviewed in source.",
+      "reason": "The coordinator withheld the batch browser lock and explicitly prohibited opening Chrome or any browser."
+    }
+  },
+  "primary_cta": {
+    "status": "passed_by_source_and_test",
+    "label": "Start the beginner guide",
+    "target": "#quick-start",
+    "external_roblox_cta_priority": "secondary"
+  },
+  "facts": {
+    "status": "passed",
+    "research_approval_sha256": "e5c36bffb2b43a1f223cfea780af77ccbf7b9921d4d09efb264083ceddbe42ff",
+    "notes": [
+      "Page copy uses approved identity, developer, gameplay, boost, server-cap, code, and code-redemption facts.",
+      "The mutable code and milestone are explicitly time-scoped to August 19, 2026.",
+      "Rejected Cash-customisation, Discord-posting, map-roster, VIP-price, boost-stacking, starter-car, and diamonds claims were not used."
+    ]
+  },
+  "assets": {
+    "status": "passed",
+    "items": [
+      {
+        "path": "public/og.svg",
+        "source": "Codex-generated original vector artwork",
+        "license": "original for this repository"
+      },
+      {
+        "path": "app/globals.css",
+        "source": "CSS-generated night highway scene",
+        "license": "original for this repository"
+      }
+    ],
+    "third_party_assets": []
+  },
+  "accessibility_and_navigation": {
+    "static_status": "passed",
+    "checks": [
+      "Semantic header, navigation, main, sections, ordered lists, details/summary, and footer are present.",
+      "A keyboard skip link and visible focus styles are present.",
+      "Reduced-motion handling is present.",
+      "Natural internal links connect quick start, core loop, advanced route, mistakes, and FAQ content."
+    ]
+  },
+  "issues_and_resolution": [
+    {
+      "issue": "Requested Kimi design package failed handoff validation.",
+      "resolution": "Used the recorded Codex fallback package, which passed validation; provider attribution remains Codex rather than Kimi."
+    },
+    {
+      "issue": "Rendered checks at 375, 768, and 1440 could not be performed without the global browser lock.",
+      "resolution": "No browser was opened. Static responsive checks were recorded and the rendered gate remains pending for the coordinator."
+    }
+  ],
+  "status": "blocked",
+  "final_decision": "pending_browser_lock"
+}

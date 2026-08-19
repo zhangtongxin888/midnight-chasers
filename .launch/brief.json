@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "run_id": "midnight-chasers-20260819-224500",
-  "status": "待研究",
+  "status": "部署待验收",
   "game": {
     "official_name": "Midnight Chasers",
     "slug": "midnight-chasers",

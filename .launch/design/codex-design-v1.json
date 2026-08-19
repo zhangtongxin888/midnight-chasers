@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "run_id": "midnight-chasers-20260819-224500",
+  "game": {
+    "official_name": "Midnight Chasers: Highway Racing",
+    "domain": "midnight-chasers.wiki"
+  },
+  "provider": {
+    "name": "Codex",
+    "model": "gpt-5.6-sol",
+    "generated_at": "2026-08-19T16:09:41Z"
+  },
+  "fallback_reason": "Kimi CLI exited immediately in Orca terminals. Sites skipped to avoid browser login. Codex executed design. worker_done was rejected as inactive_dispatch. Coordinator normalized the design package to the required schema.",
+  "research_approval_sha256": "e5c36bffb2b43a1f223cfea780af77ccbf7b9921d4d09efb264083ceddbe42ff",
+  "status": "ready_for_review",
+  "design_system": {
+    "theme": "Night Run Telemetry",
+    "palette": {
+      "bg": "#07090B",
+      "surface": "#0D1013",
+      "text": "#F4F6F3",
+      "accent": "#C8FF00"
+    },
+    "font_strategy": "Barlow Condensed display, DM Sans body",
+    "spacing_scale": [
+      "8px",
+      "16px",
+      "24px",
+      "40px",
+      "64px"
+    ],
+    "responsive_rules": [
+      "1040px",
+      "820px",
+      "560px"
+    ]
+  },
+  "homepage": {
+    "hero": {
+      "headline": "Midnight Chasers highway guide",
+      "subheadline": "A no-hesi starter route with approved codes, boosts, and common mistakes.",
+      "primary_cta": {
+        "label": "Start the beginner guide",
+        "target": "/#beginner-guide"
+      },
+      "secondary_cta": {
+        "label": "Open on Roblox",
+        "target": "#codes"
+      }
+    },
+    "sections": [
+      {
+        "id": "top",
+        "title": "Hero",
+        "purpose": "Orient the player and route them to the on-site beginner guide before any external play link."
+      },
+      {
+        "id": "beginner-guide",
+        "title": "First 10 Minutes",
+        "purpose": "Five-step starter route based on approved game identity, group boost, code redemption, vehicle types, and play modes."
+      },
+      {
+        "id": "codes",
+        "title": "Current Code",
+        "purpose": "Show the time-scoped official-description code and redemption steps with expiry cautions."
+      },
+      {
+        "id": "experience",
+        "title": "Choose Your Line",
+        "purpose": "Summarize approved driving, racing, exploring, and meetup activities."
+      },
+      {
+        "id": "boosts",
+        "title": "Cash Boosts",
+        "purpose": "Compare the approved 25% community and 50% VIP claims without asserting price or stacking."
+      },
+      {
+        "id": "pit-wall",
+        "title": "Common Mistakes",
+        "purpose": "Warn about code capitalization, whitespace, expiry, and unsourced specifics."
+      },
+      {
+        "id": "faq",
+        "title": "FAQ",
+        "purpose": "Answer identity, code menu, failure, VIP, and vehicle-choice questions concisely."
+      }
+    ]
+  },
+  "page_map": [
+    {
+      "path": "/",
+      "purpose": "Single-page guide covering hero, first 10 minutes, codes, boosts, mistakes, and FAQ."
+    },
+    {
+      "path": "/#beginner-guide",
+      "purpose": "On-page beginner guide section."
+    }
+  ],
+  "components": [],
+  "assets": [
+    {
+      "path": "public/road-mark.svg",
+      "source": "generated",
+      "license": "original"
+    }
+  ],
+  "approved_fact_ids_used": [
+    "fact-001",
+    "fact-002",
+    "fact-003",
+    "fact-004",
+    "fact-005",
+    "fact-006",
+    "fact-007",
+    "fact-008",
+    "fact-009",
+    "fact-010",
+    "fact-011",
+    "fact-013",
+    "fact-014",
+    "fact-015",
+    "fact-016",
+    "fact-017",
+    "fact-019",
+    "fact-020",
+    "fact-021",
+    "fact-024"
+  ],
+  "files_changed": [
+    "app/globals.css",
+    "app/layout.tsx",
+    "app/page.tsx",
+    "components/CodeCopy.tsx",
+    "components/FaqList.tsx",
+    "components/GuideTimeline.tsx",
+    "components/Icons.tsx",
+    "components/NightDriveVisual.tsx",
+    "components/SiteHeader.tsx",
+    "next.config.ts",
+    "package.json",
+    "public/road-mark.svg",
+    "tsconfig.json"
+  ],
+  "preview_command": "npm run build && npm run start"
+}
