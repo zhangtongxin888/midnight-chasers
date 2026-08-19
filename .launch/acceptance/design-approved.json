@@ -6,7 +6,7 @@
     "domain": "midnight-chasers.wiki"
   },
   "reviewed_by": "Codex",
-  "reviewed_at": "2026-08-19T16:30:00Z",
+  "reviewed_at": "2026-08-19T19:25:00Z",
   "candidate_path": "/Users/zhangtongxin/sites/midnight-chasers-kimi-candidate",
   "candidate_review": {
     "scope": "Only the current game's app, components, public asset, and framework configuration were present; no .git directory, remote, deployment credential, or cross-game file was found.",
@@ -33,23 +33,23 @@
   },
   "viewports": {
     "375": {
-      "status": "blocked",
+      "status": "passed",
       "static_review": "CSS mobile breakpoint at 560px is present; navigation collapses, hero actions stack, timeline becomes two columns, and cards become one column.",
-      "reason": "The coordinator withheld the batch browser lock and explicitly prohibited opening Chrome or any browser."
+      "rendered_review": "Formal homepage rendered and was visually inspected at 375px. clientWidth, innerWidth, and scrollWidth were all 375, with no horizontal overflow or cutoff. The 347x59px internal beginner-guide CTA was the largest action."
     },
     "768": {
-      "status": "blocked",
+      "status": "passed",
       "static_review": "CSS tablet breakpoint at 820px is present; hero and content sections collapse to one column while core navigation remains reachable through page links.",
-      "reason": "The coordinator withheld the batch browser lock and explicitly prohibited opening Chrome or any browser."
+      "rendered_review": "Formal homepage rendered and was visually inspected at 768px. clientWidth, innerWidth, and scrollWidth were all 768, with no horizontal overflow or cutoff. Clicking the largest action reached https://midnight-chasers.wiki/#quick-start."
     },
     "1440": {
-      "status": "blocked",
+      "status": "passed",
       "static_review": "The 1180px content shell, two-column hero, three-card core loop, and two-column advanced route were reviewed in source.",
-      "reason": "The coordinator withheld the batch browser lock and explicitly prohibited opening Chrome or any browser."
+      "rendered_review": "Formal homepage rendered and was visually inspected at 1440px. clientWidth, innerWidth, and scrollWidth were all 1440, with no horizontal overflow or cutoff. The 247.59x59px internal beginner-guide CTA was the largest action."
     }
   },
   "primary_cta": {
-    "status": "passed_by_source_and_test",
+    "status": "passed_by_source_test_and_rendered_interaction",
     "label": "Start the beginner guide",
     "target": "#quick-start",
     "external_roblox_cta_priority": "secondary"
@@ -95,9 +95,9 @@
     },
     {
       "issue": "Rendered checks at 375, 768, and 1440 could not be performed without the global browser lock.",
-      "resolution": "No browser was opened. Static responsive checks were recorded and the rendered gate remains pending for the coordinator."
+      "resolution": "After the coordinator released the lock for this site, all three formal-domain viewports passed rendered visual and overflow checks, and the internal primary CTA was exercised."
     }
   ],
-  "status": "blocked",
-  "final_decision": "pending_browser_lock"
+  "status": "approved",
+  "final_decision": "approved_pending_coordinator_acceptance"
 }
