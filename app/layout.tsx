@@ -1,3 +1,4 @@
+import { AdsterraGlobalFallback, AdsterraPopunderGate, AdsterraSocialBarGate, AdsterraStickyRail } from "@/components/ads";
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
@@ -39,7 +40,13 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <AdsterraPopunderGate />
+        <AdsterraSocialBarGate />
+        <AdsterraStickyRail />
+        <AdsterraGlobalFallback />
+        {children}
+      </body>
     </html>
   );
 }
