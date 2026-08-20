@@ -30,7 +30,7 @@
   },
   "design_package": {
     "file": ".launch/design/kimi-design-v3.json",
-    "sha256": "815288fd6c24ce7b842b287fda7d12e63dc0465f8704c7f84877d9648121e042",
+    "sha256": "1700ed342aabfcd90fcd62b5971c2c1f2f6d8e8b7cd6bc100c07daf60a8f67ca",
     "provider": "Kimi",
     "model": "kimi-code/k3",
     "validation": "passed after Codex removed two unapproved fact references and the corresponding unsupported copy"
@@ -58,7 +58,7 @@
   "primary_cta": {
     "status": "passed_by_source_test_and_rendered_review",
     "label": "Start the beginner guide",
-    "target": "/beginner-guide/",
+    "target": "/beginner-guide",
     "is_internal": true
   },
   "facts": {

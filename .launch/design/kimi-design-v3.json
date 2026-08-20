@@ -49,7 +49,7 @@
       "headline": "Own the midnight highway.",
       "primary_cta": {
         "label": "Start the beginner guide →",
-        "target": "/beginner-guide/",
+        "target": "/beginner-guide",
         "is_internal": true
       },
       "secondary_cta": {
@@ -68,13 +68,13 @@
   },
   "page_map": [
     {"path": "/", "purpose": "Hub: night highway hero, directory, core loop, code spotlight, progression, mistakes, FAQ teaser."},
-    {"path": "/beginner-guide/", "purpose": "First 10 minutes: 5-step localStorage checklist (group boost, redeem code, first spawn, first drive, first goals) plus next-reads and beginner FAQ."},
-    {"path": "/codes/", "purpose": "ThanksFor940k with copy button, next milestone 960000 likes, Store>Codes redeem steps, why blog lists disagree, playtime rewards."},
-    {"path": "/cash-boosts/", "purpose": "Group 25% free vs VIP 50% (200 Robux) table, stacking officially unknown, Premium tag, cash-source overview."},
-    {"path": "/gamepasses/", "purpose": "On-sale catalog (VIP 200, Track 175, Police 125, Mobile 75) with no-free-cars disclaimer, offsale passes, who each suits."},
-    {"path": "/maps/", "purpose": "Shutoko (cruise/cash), Boneville (racing), Tokyo (official mention) — all date-stamped; no mid-match swap."},
-    {"path": "/vehicles/", "purpose": "Dealership flow, 11 customization categories, dated 155-count and fastest-name snapshots, trademark-safe naming."},
-    {"path": "/faq/", "purpose": "Identity card (name without SUSPENSION prefix, IDs, Midnight In-dev, genre, 14 players), gameplay/codes/community accordions, Midnight Racing: Tokyo distinction."}
+    {"path": "/beginner-guide", "purpose": "First 10 minutes: 5-step localStorage checklist (group boost, redeem code, first spawn, first drive, first goals) plus next-reads and beginner FAQ."},
+    {"path": "/codes", "purpose": "ThanksFor940k with copy button, next milestone 960000 likes, Store>Codes redeem steps, why blog lists disagree, playtime rewards."},
+    {"path": "/cash-boosts", "purpose": "Group 25% free vs VIP 50% (200 Robux) table, stacking officially unknown, Premium tag, cash-source overview."},
+    {"path": "/gamepasses", "purpose": "On-sale catalog (VIP 200, Track 175, Police 125, Mobile 75) with no-free-cars disclaimer, offsale passes, who each suits."},
+    {"path": "/maps", "purpose": "Shutoko (cruise/cash), Boneville (racing), Tokyo (official mention) — all date-stamped; no mid-match swap."},
+    {"path": "/vehicles", "purpose": "Dealership flow, 11 customization categories, dated 155-count and fastest-name snapshots, trademark-safe naming."},
+    {"path": "/faq", "purpose": "Identity card (name without SUSPENSION prefix, IDs, Midnight In-dev, genre, 14 players), gameplay/codes/community accordions, Midnight Racing: Tokyo distinction."}
   ],
   "approved_fact_ids_used": [
     "fact-001", "fact-002", "fact-003", "fact-004", "fact-005", "fact-006", "fact-008", "fact-009",
@@ -123,7 +123,7 @@
     "viewports": [375, 768, 1440],
     "no_horizontal_scroll": true,
     "primary_cta_is_internal": true,
-    "primary_cta_target": "/beginner-guide/ or #quick-start",
+    "primary_cta_target": "/beginner-guide or #quick-start",
     "checks_run": [
       "Headless browser: scrollWidth === innerWidth for all 8 pages at 375, 768, 1440 (24/24) — passed",
       "All 8 routes load on the static preview server (port 4175) — passed",

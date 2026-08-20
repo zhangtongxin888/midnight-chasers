@@ -9,7 +9,7 @@ const contentRoot = path.resolve("content/pages");
 test("all eight required routes have production metadata", async () => {
   assert.deepEqual(
     pages.map(({ route }) => route),
-    ["/", "/beginner-guide/", "/codes/", "/cash-boosts/", "/gamepasses/", "/maps/", "/vehicles/", "/faq/"],
+    ["/", "/beginner-guide", "/codes", "/cash-boosts", "/gamepasses", "/maps", "/vehicles", "/faq"],
   );
 
   for (const page of pages) {
@@ -21,7 +21,7 @@ test("all eight required routes have production metadata", async () => {
 
 test("the largest homepage CTA opens the internal beginner guide", async () => {
   const source = await readFile(path.join(contentRoot, "index.html"), "utf8");
-  assert.match(source, /class="button button-primary" href="\/beginner-guide\/"/);
+  assert.match(source, /class="button button-primary" href="\/beginner-guide"/);
   assert.doesNotMatch(source, /class="button button-primary" href="https?:\/\//);
 });
 

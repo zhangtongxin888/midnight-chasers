@@ -6,13 +6,13 @@ const siteUrl = "https://midnight-chasers.wiki";
 
 export const guidePages = [
   { route: "/", slug: null, file: "index.html", priority: 1 },
-  { route: "/beginner-guide/", slug: "beginner-guide", file: "beginner-guide/index.html", priority: 0.9 },
-  { route: "/codes/", slug: "codes", file: "codes/index.html", priority: 0.8 },
-  { route: "/cash-boosts/", slug: "cash-boosts", file: "cash-boosts/index.html", priority: 0.8 },
-  { route: "/gamepasses/", slug: "gamepasses", file: "gamepasses/index.html", priority: 0.8 },
-  { route: "/maps/", slug: "maps", file: "maps/index.html", priority: 0.8 },
-  { route: "/vehicles/", slug: "vehicles", file: "vehicles/index.html", priority: 0.8 },
-  { route: "/faq/", slug: "faq", file: "faq/index.html", priority: 0.7 },
+  { route: "/beginner-guide", slug: "beginner-guide", file: "beginner-guide/index.html", priority: 0.9 },
+  { route: "/codes", slug: "codes", file: "codes/index.html", priority: 0.8 },
+  { route: "/cash-boosts", slug: "cash-boosts", file: "cash-boosts/index.html", priority: 0.8 },
+  { route: "/gamepasses", slug: "gamepasses", file: "gamepasses/index.html", priority: 0.8 },
+  { route: "/maps", slug: "maps", file: "maps/index.html", priority: 0.8 },
+  { route: "/vehicles", slug: "vehicles", file: "vehicles/index.html", priority: 0.8 },
+  { route: "/faq", slug: "faq", file: "faq/index.html", priority: 0.7 },
 ] as const;
 
 export type GuideRoute = (typeof guidePages)[number]["route"];
