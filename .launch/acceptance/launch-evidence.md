@@ -1,74 +1,58 @@
-# Midnight Chasers launch evidence
+# Midnight Chasers Kimi v3 launch evidence
 
-Run: `midnight-chasers-20260819-224500`
+Run: `midnight-chasers-20260820-043000`
 
 Formal domain: `https://midnight-chasers.wiki`
 
-Worker status: **待总控验收** — all worker-side launch gates are complete; final acceptance remains with the coordinator.
+Worker status: **待总控验收**. The worker-side implementation, deployment, domain, crawl, visual, and GSC submission gates have been checked; final acceptance remains with the coordinator.
 
 ## Evidence table
 
 | Check | Formal URL or resource | Checked at (UTC) | Actual result | Evidence |
 |---|---|---:|---|---|
-| Independent repository | `https://github.com/zhangtongxin888/midnight-chasers` | 2026-08-19 16:21 | Pass | Commit `96df716eabe8e5439d19f4f46a8156ff581c7828` was fast-forwarded and pushed to `main`. |
-| Repository isolation | Local formal repository | 2026-08-19 16:21 | Pass | Only Midnight Chasers source and its `.launch` artifacts were changed; no other game repository was touched. |
-| Vercel Git binding | Project `prj_8npNk0tMCjWhlcVGuzA3RmUDcH75` | 2026-08-19 19:25 | Pass | Vercel project link is GitHub `zhangtongxin888/midnight-chasers`, production branch `main`, and the promoted production deployment references commit `a156bb89...`. |
-| Production deployment | Deployment `dpl_FStjNPk5iJHLE5BzSgiFdCZv8jcS` | 2026-08-19 19:25 | Pass | Vercel reports `target=production`, `readyState=READY`, and `readySubstate=PROMOTED`. The Vercel hostname is deployment evidence only, not the formal site address. |
-| Local lint | `npm run lint` | 2026-08-19 16:29 | Pass | ESLint completed with exit code 0. |
-| Local type check | `npm run typecheck` | 2026-08-19 16:29 | Pass | TypeScript completed with exit code 0. |
-| Local tests | `npm test` | 2026-08-19 16:29 | Pass | 3/3 tests passed: internal primary CTA, required guide sections, and canonical crawl configuration. |
-| Local production build | `npm run build` | 2026-08-19 16:29 | Pass | Next.js 16.1.6 build completed; `/`, `/robots.txt`, and `/sitemap.xml` were statically generated. |
-| Build routes vs sitemap | `.next/server/app-paths-manifest.json` and sitemap | 2026-08-19 16:23 | Pass | The only public indexable HTML route is `/`; the sitemap contains exactly that canonical URL. Framework error pages and metadata routes are intentionally excluded. |
-| Candidate isolation | `/Users/zhangtongxin/sites/midnight-chasers-kimi-candidate` | 2026-08-19 16:28 | Pass | Candidate contained only listed current-game frontend/config files, no `.git`, no remote, and no detected credentials. Formal implementation was selectively rewritten. |
-| Requested handoff validation | `.launch/design/kimi-design-v1.json` | 2026-08-19 16:28 | Fail | The exact requested validator exited 1 with `design primary CTA must lead to the beginner guide`; this package was not silently approved. |
-| Fallback handoff validation | `.launch/design/codex-design-v1.json` | 2026-08-19 16:28 | Pass | The same validator exited 0 with `handoff validation passed`. |
-| Primary CTA | `/#quick-start` | 2026-08-19 19:23 | Pass by rendered interaction | The largest hero button is `Start the beginner guide`; its target is `#quick-start`. At 768px, clicking it produced the formal URL `https://midnight-chasers.wiki/#quick-start`. The Roblox link remains a smaller secondary action. |
-| Required content | Home page sections | 2026-08-19 16:29 | Pass by source/test | Quick start, core gameplay loop, advanced route, common mistakes, FAQ, and natural internal links are present. |
-| Responsive 375px | `https://midnight-chasers.wiki/` | 2026-08-19 19:18 | Pass | Rendered and visually inspected at 375px. `clientWidth`, `innerWidth`, and `scrollWidth` were all 375; no horizontal overflow or cutoff was present. The largest CTA was the 347x59px internal beginner-guide button. |
-| Responsive 768px | `https://midnight-chasers.wiki/` | 2026-08-19 19:19 | Pass | Rendered and visually inspected at 768px. All three page-width measurements were 768; the one-column layout was legible with no horizontal overflow, and the internal beginner-guide CTA was successfully clicked. |
-| Responsive 1440px | `https://midnight-chasers.wiki/` | 2026-08-19 19:19 | Pass | Rendered and visually inspected at 1440px. All three page-width measurements were 1440; the two-column layout was legible with no horizontal overflow. The largest CTA was the 247.59x59px internal beginner-guide button. |
-| Deployment home page | Vercel production alias | 2026-08-19 16:27 | Pass | HTTP 200, `text/html`, 40,046 bytes. This alias is not recorded as the formal address. |
-| Deployment robots | Vercel production alias `/robots.txt` | 2026-08-19 16:27 | Pass | HTTP 200, `text/plain`; allows crawling and declares `https://midnight-chasers.wiki/sitemap.xml`. |
-| Deployment sitemap | Vercel production alias `/sitemap.xml` | 2026-08-19 16:27 | Pass | HTTP 200, `application/xml`; 1 canonical HTML URL. |
-| Deployment OG asset | Vercel production alias `/og.svg` | 2026-08-19 16:27 | Pass | HTTP 200, `image/svg+xml`; original artwork is present. |
-| Canonical | Initial production HTML | 2026-08-19 16:28 | Pass in deployed artifact | Exactly one canonical tag points to `https://midnight-chasers.wiki`; OG image is absolute and JSON-LD is present once. |
-| Security headers | Vercel production alias | 2026-08-19 16:28 | Pass | `X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy`, and `X-Frame-Options` were returned. |
-| DNS ownership/attachment | Vercel project domains | 2026-08-19 16:25 | Pass | Apex and `www` were added to the correct Vercel project; Vercel reports ownership as current scope and project verification true. |
-| DNS write | Spaceship authoritative zone | 2026-08-19 19:21 | Pass | The public parking apex A values `34.216.117.25` and `54.149.79.189` were replaced with the complete Vercel set `216.198.79.1` and `64.29.17.1`; `www` CNAME was added as `89c66f358ec50681.vercel-dns-017.com.`. The GSC TXT record was appended at `@`. Nameservers remained `launch1.spaceship.net` and `launch2.spaceship.net`; the initial custom-record list had no MX, TXT, CAA, or unrelated subdomain records to alter. |
-| DNS propagation | Authoritative NS, `1.1.1.1`, and `8.8.8.8` | 2026-08-19 19:25 | Pass | Both authoritative nameservers and both public resolvers returned the two apex A values, the exact `www` CNAME, and the appended Google verification TXT record. |
-| Vercel domain verification | Apex and `www` | 2026-08-19 19:25 | Pass | `vercel domains verify` returned `status=ok`, `reason=configured_correctly`, `misconfigured=false`, `issues=[]`, and `conflicts=[]` for both domains. Apex was configured by A; `www` was configured by CNAME. |
-| TLS certificate | Apex and `www` | 2026-08-19 19:25 | Pass | Vercel certificate `cert_AHZRyRL8AGAcMR0RkSHubmpH` covers both names, renews automatically, and expires in 90 days. TLS 1.3 handshakes to both apex A addresses verified successfully with CN `midnight-chasers.wiki`. |
-| Main-domain HTTPS | `https://midnight-chasers.wiki/` | 2026-08-19 19:25 | Pass | Formal apex HTTPS returns 200. |
-| `www` redirect | `https://www.midnight-chasers.wiki/test/path?x=1` | 2026-08-19 19:25 | Pass | HTTPS returns 308 to `https://midnight-chasers.wiki/test/path?x=1`, preserving the full path and query. |
-| Formal key page | `https://midnight-chasers.wiki/` | 2026-08-19 19:25 | Pass | Formal homepage returns indexable HTML with one canonical URL, complete social metadata, valid JSON-LD, and the required guide sections. |
-| Formal robots | `https://midnight-chasers.wiki/robots.txt` | 2026-08-19 19:25 | Pass | HTTP 200, `text/plain`; crawling is allowed and the formal sitemap URL is declared. |
-| Formal sitemap HTTP and URL count | `https://midnight-chasers.wiki/sitemap.xml` | 2026-08-19 19:25 | Pass | HTTP 200, `application/xml`; exactly 1 canonical-host URL is present and it returns indexable 200 HTML with a self-canonical. |
-| Production launch verifier | `verify_launch.py midnight-chasers.wiki` | 2026-08-19 19:25 | Pass | The required verifier passed DNS, canonical HTTPS, metadata, JSON-LD, crawl, sitemap, one-page indexability, and alternate-host redirects. It emitted one non-blocking warning that Content-Security-Policy is absent. |
-| GSC ownership | Domain property `sc-domain:midnight-chasers.wiki` | 2026-08-19 19:22 | Pass | The full Google TXT verification record was appended without replacing another record. Search Console displayed the exact success text `已完成所有权验证` and method `域名提供商`. |
-| GSC Sitemap | `https://midnight-chasers.wiki/sitemap.xml` | 2026-08-19 19:23 | Pass | Search Console first displayed `已成功提交站点地图`; the submitted-sitemap table then displayed the exact status `成功`, with 1 discovered page. |
-| Homepage indexing request | `https://midnight-chasers.wiki/` | 2026-08-19 19:23 | Pass | Requested exactly once. Search Console displayed `已请求编入索引` and confirmed that the URL was added to the priority crawl queue. |
+| Independent repository | `https://github.com/zhangtongxin888/midnight-chasers` | 2026-08-20 05:13 | Pass | Kimi v3 source was committed to `main` as `d573e1451ce0138e991d82b4ef79b93d2122edea`; canonical redirect normalization was committed and pushed as `22cefc62431bf6b6bccb5bf5c3f2f8b3ba55f941`. `origin/main` matched the formal repository before this evidence update. |
+| Repository isolation | `/Users/zhangtongxin/sites/midnight-chasers` | 2026-08-20 05:13 | Pass | Only the Midnight Chasers formal repository and its `.launch` artifacts were changed. The one-time Kimi candidate directory had no formal remote or deployment authority. |
+| Handoff validation | `roblox-batch-site-launch/scripts/validate_handoffs.mjs` | 2026-08-20 05:14 | Pass | The required validator ran against `grok-research-v2.json`, `research-approved.json`, and `kimi-design-v3.json`, then exited 0 with `handoff validation passed`. Research approval SHA-256 is `5f262933b8b5b76c684fb10bdc9dd9320029d31a9aa36d91164ab89637b7d07b`; final Kimi v3 design SHA-256 is `1700ed342aabfcd90fcd62b5971c2c1f2f6d8e8b7cd6bc100c07daf60a8f67ca`. |
+| Design approval | `.launch/acceptance/design-approved.json` | 2026-08-20 04:52 | Pass | Status is `approved`; final decision is `approved_pending_coordinator_acceptance`. The approval records the final design hash, responsive evidence, asset review, accessibility checks, and preservation of the commercial runtime. |
+| Eight-page integration | Formal Next.js source | 2026-08-20 04:52 | Pass | Kimi v3 content is integrated through shared Next.js route/rendering modules for `/`, `/beginner-guide`, `/codes`, `/cash-boosts`, `/gamepasses`, `/maps`, `/vehicles`, and `/faq`. Trailing-slash variants permanently normalize to the same no-slash canonical pages. |
+| Content guardrails | Eight formal pages | 2026-08-20 04:52 | Pass | Every page has exactly one H1 and no H1 begins with `[SUSPENSION!]`. The only promoted current code is `ThanksFor940k`; no fixed group-plus-VIP combined percentage is published. |
+| Primary CTA | `https://midnight-chasers.wiki/beginner-guide` | 2026-08-20 04:52 | Pass | The largest hero action is an internal link to the beginner guide. External Roblox actions remain secondary. |
+| Commercial package preservation | `components/ads/`, `lib/adsterra.generated.ts`, `lib/runtime-config.ts` | 2026-08-20 05:02 | Pass | Existing Adsterra components and runtime configuration were not edited. Local production renders retained one root-layout ad shell at 375, 768, and 1440 widths. |
+| Lint | `npm run lint` | 2026-08-20 05:05 | Pass | ESLint and the site-specific content/route checks exited 0. Generated `.vercel` output is excluded from source linting. |
+| Tests | `npm test` | 2026-08-20 05:05 | Pass | 5/5 tests passed: route/content structure, code and cash claims, metadata/JSON-LD, internal links/fragments, and responsive script/CSS behavior. |
+| Type check | `npm run typecheck` | 2026-08-20 05:05 | Pass | TypeScript exited 0. |
+| Production build | `npm run build` | 2026-08-20 05:05 | Pass | Next.js 16.1.6 production build completed. `/` was prerendered, seven `[slug]` pages were statically generated, and `robots.txt` plus `sitemap.xml` were generated. |
+| Vercel production deployment | `dpl_FvLjSWGLBd2c8YU9ybdHx2GPvD51` | 2026-08-20 05:13 | Pass | Project `prj_8npNk0tMCjWhlcVGuzA3RmUDcH75` reports `target=production` and `readyState=READY`. Deployment URL is `midnight-chasers-62mf2eb7r-zhangtongxin888s-projects.vercel.app`; apex and `www` are production aliases. |
+| Vercel domain verification | Apex and `www` | 2026-08-20 05:09 | Pass | `vercel domains verify ... --json` returned `status=ok`, `configured_correctly`, `misconfigured=false`, `issues=[]`, and project `verified=true` for both names. Apex remains configured by A records; `www` remains configured by CNAME. |
+| DNS scope | Spaceship authoritative zone | 2026-08-20 05:09 | Pass, read-only | No DNS record or nameserver was changed in this run. Existing authoritative nameservers remain `launch1.spaceship.net` and `launch2.spaceship.net`; Vercel confirms the current A/CNAME values are correct. |
+| Formal apex HTTPS | `https://midnight-chasers.wiki/` | 2026-08-20 05:08 | Pass | HTTPS returns 200 with the formal page, unique canonical, metadata, OG image, and JSON-LD. |
+| Alternate-host redirect | `https://www.midnight-chasers.wiki/test/path?x=1` | 2026-08-20 05:08 | Pass | Redirects to the apex while preserving the path and query. HTTP-to-HTTPS checks also preserved path and query. |
+| Formal key pages | Eight sitemap routes | 2026-08-20 05:08 | Pass | All eight pages return indexable HTTP 200 HTML with a single self-canonical. The production verifier accepted the complete set. |
+| Formal robots | `https://midnight-chasers.wiki/robots.txt` | 2026-08-20 05:08 | Pass | HTTP 200; crawling is allowed and the formal sitemap URL is declared. |
+| Formal sitemap | `https://midnight-chasers.wiki/sitemap.xml` | 2026-08-20 05:13 | Pass | HTTP 200 with `application/xml`. The response contains exactly eight canonical-host URLs, and a Googlebot user-agent receives the same successful response. |
+| Production launch verifier | `verify_launch.py midnight-chasers.wiki` | 2026-08-20 05:08 | Pass | DNS, HTTPS, canonical, metadata, OG image, JSON-LD, crawl directives, all eight sitemap pages, and alternate-host redirects passed. It emitted one non-blocking warning that Content-Security-Policy is absent. |
+| Responsive 375px | All eight formal routes | 2026-08-20 05:02 | Pass | Browser checks found no horizontal overflow, broken images, browser errors, canonical mismatch, duplicate JSON-LD, or duplicate H1. Screenshot: `screenshots/v3-home-375.png`. |
+| Responsive 768px | All eight formal routes | 2026-08-20 05:02 | Pass | The same full-route checks passed at tablet width. Screenshot: `screenshots/v3-home-768.png`. |
+| Responsive 1440px | All eight formal routes | 2026-08-20 05:02 | Pass | The same full-route checks passed at desktop width. Screenshot: `screenshots/v3-home-1440.png`. |
+| GSC ownership | Domain property `sc-domain:midnight-chasers.wiki` | 2026-08-20 05:13 | Pass, preserved | The already verified Domain Property was used; ownership and its DNS verification were not recreated or changed. |
+| GSC sitemap update | `https://midnight-chasers.wiki/sitemap.xml` | 2026-08-20 05:24 | Submitted; Google refresh pending | After no GSC CLI was available, the coordinator granted an exclusive browser lock. The exact existing sitemap was resubmitted in the matching Domain Property. The final detail refresh displayed `无法读取此站点地图` and the prior discovered count of 1, while the live XML returned HTTP 200 from both Vercel apex addresses with a Googlebot user-agent and contained exactly 8 URLs. The coordinator explicitly accepted recording this transient post-resubmission state as waiting for Google to fetch; no success or larger discovered count is claimed. The worker-created GSC tab was closed and the browser lock was released. |
 
-## Launch completion record
+## Implementation and review notes
 
-The coordinator later released the browser lock exclusively for Midnight Chasers. The worker resumed from this document, used the existing authenticated Chrome session only for the target Spaceship zone and GSC property, and closed both target tabs immediately after completion. No other site's DNS or GSC state was changed.
+- The Kimi HTML was not deployed as an isolated replacement. Its eight pages are now source content consumed by a shared, typed Next.js renderer, keeping routes, metadata, sitemap generation, tests, and future edits in one module boundary.
+- Two design references to unapproved facts and their dependent copy were removed before approval. Officially supported gameplay descriptions were retained without turning inference into fact.
+- The first Kimi v3 deployment exposed a trailing-slash redirect mismatch during formal verification. Commit `22cefc62431bf6b6bccb5bf5c3f2f8b3ba55f941` normalized route and canonical behavior; deployment `dpl_FvLjSWGLBd2c8YU9ybdHx2GPvD51` is the verified Ready result.
+- Existing Adsterra runtime files were preserved. The final layout only adds the shared candidate client script and keeps the prior advertisement shell in production renders.
+- GSC ownership was not redone, DNS was not touched, and no new homepage indexing request was made.
 
-The recovery checklist completed as follows:
-
-1. Rechecked Vercel recommendations immediately before writing DNS; the complete recommended set was unchanged.
-2. Replaced only the conflicting parking web records, added the required `www` CNAME, and later appended the GSC TXT record. Nameservers were not changed.
-3. Verified propagation through both authoritative nameservers, Cloudflare DNS, Google DNS, and Vercel until both domains reported `misconfigured=false`.
-4. Issued and verified TLS, tested the apex and path-preserving `www` redirect, and passed the formal-domain launch verifier.
-5. Verified the GSC Domain Property, submitted the formal sitemap to exact status `成功`, and requested homepage indexing once.
-6. Rendered and approved the formal homepage at 375, 768, and 1440 widths; the largest actionable CTA enters the internal beginner guide.
-
-## Providers and fallback
+## Providers
 
 | Role | Actual provider/model | Result |
 |---|---|---|
-| Research | Grok / `grok-4.6` | Research package supplied and fact-gated. |
-| Fact review | Codex / `gpt-5.6-sol` | Approval file accepted identity, developer, and enough guide facts; rejected unsupported compound claims. |
-| Design | Codex fallback / `gpt-5.6-sol` | Kimi package failed validation; the recorded Codex fallback package passed. |
-| Formal implementation | Codex / `gpt-5.6-sol` | Rewrote and shipped the production source, tests, SEO, deployment configuration, and Vercel project. |
-| Hosting | Vercel | Production deployment Ready and Git-bound; formal DNS, TLS, apex HTTPS, and `www` redirect passed. |
+| Research | Grok / `grok-4.6` | `grok-research-v2.json` was fact-gated through `research-approved.json`. |
+| Fact and design review | Codex / `gpt-5.6-sol` | Unsupported claims were removed; final handoffs and production behavior were approved. |
+| Candidate design | Kimi / `kimi-code/k3` | Kimi v3 supplied the accepted eight-page visual/content candidate. |
+| Formal implementation and launch | Codex / `gpt-5.6-sol` | Integrated Next.js source, tests, SEO, deployment, domain checks, GSC resubmission, and evidence. |
+| Hosting | Vercel | Production deployment is Ready on the formal apex and `www` alias. |
 
-Final worker conclusion: **待总控验收**. All requested worker-side DNS, TLS, formal-site, rendered viewport, GSC ownership, sitemap, and one-time indexing checks passed; the coordinator retains final acceptance authority.
+Final worker conclusion: **待总控验收**. The coordinator must independently recheck the fact/design approvals, commits, production deployment, eight key pages, robots, sitemap, canonicals, GSC ownership, and GSC sitemap status before declaring the site launched.
