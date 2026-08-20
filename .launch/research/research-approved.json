@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "run_id": "midnight-chasers-20260819-224500",
+  "run_id": "midnight-chasers-20260820-043000",
   "game": {
     "official_name": "Midnight Chasers: Highway Racing",
     "domain": "midnight-chasers.wiki"
   },
   "reviewed_by": "Codex",
-  "reviewed_at": "2026-08-19T15:55:23Z",
+  "reviewed_at": "2026-08-20T02:45:39Z",
   "approved_fact_ids": [
     "fact-001",
     "fact-002",
@@ -19,39 +19,128 @@
     "fact-009",
     "fact-010",
     "fact-011",
+    "fact-012",
     "fact-013",
     "fact-014",
     "fact-015",
     "fact-016",
-    "fact-017",
+    "fact-018",
     "fact-019",
     "fact-020",
     "fact-021",
-    "fact-024"
+    "fact-022",
+    "fact-023",
+    "fact-024",
+    "fact-025",
+    "fact-026",
+    "fact-027",
+    "fact-028",
+    "fact-029",
+    "fact-030",
+    "fact-032",
+    "fact-033",
+    "fact-034",
+    "fact-035",
+    "fact-036",
+    "fact-038",
+    "fact-043",
+    "fact-044",
+    "fact-045",
+    "fact-046",
+    "fact-047",
+    "fact-048",
+    "fact-049",
+    "fact-050",
+    "fact-051",
+    "fact-052",
+    "fact-055",
+    "fact-056",
+    "fact-057",
+    "fact-058",
+    "fact-059",
+    "fact-062",
+    "fact-063",
+    "fact-068",
+    "fact-069",
+    "fact-070",
+    "fact-071",
+    "fact-072",
+    "fact-073",
+    "fact-074"
   ],
   "rejected_facts": [
     {
-      "id": "fact-012",
-      "reason": "The Eurogamer source supports earning Cash by driving and spending it on cars, but it does not support the claim that Cash is used for vehicle customisation or establish that it is the only/main currency. The compound claim is therefore not approved as written."
+      "id": "fact-017",
+      "reason": "The fetched Roblox page did not expose the claimed maturity, Voice Chat, or Camera fields, so the compound UI-state claim could not be independently confirmed from its listed source."
     },
     {
-      "id": "fact-018",
-      "reason": "Pocket Tactics supports looking for codes on the developer's X account and Roblox community and separately confirms a community Discord for news, but it does not say that new codes are typically posted in that Discord. The compound claim overstates its listed source."
+      "id": "fact-031",
+      "reason": "The listed Eurogamer URL supports earning Cash by driving and spending it on cars, but it does not support vehicle customisation; the fact also relies on Sportskeeda without listing it as the source."
     },
     {
-      "id": "fact-022",
-      "reason": "The official post confirms that one reward worked only on the Tokyo map, but that wording alone does not independently establish a complete multi-map structure. The claim's inference that the experience has more than one map is not approved."
+      "id": "fact-037",
+      "reason": "Pocket Tactics points readers to the developer X account and Roblox community for codes and describes Discord as a news/community server, but it does not establish that new codes are typically posted in all three places."
     },
     {
-      "id": "fact-023",
-      "reason": "The listed X status returned a page without the claimed post content during Codex review. A secondary guide mentions the code and reward, but that does not verify the fact record's claim about the official creator post from its listed source."
+      "id": "fact-039",
+      "reason": "Pocket Tactics' active-code table conflicts with the official description and is mutable; only the official current code ThanksFor940k is approved."
+    },
+    {
+      "id": "fact-040",
+      "reason": "Destructoid's third-party active/expired code table is not approved as a code authority; the official description is the gate for the current code."
+    },
+    {
+      "id": "fact-041",
+      "reason": "The listed X status returned an age-restricted tombstone, and X oEmbed also denied access, so the claimed post text and reward could not be independently verified."
+    },
+    {
+      "id": "fact-042",
+      "reason": "The official post confirms that one reward worked only on the Tokyo map, but that wording alone does not independently prove the broader claim that the experience has more than one map."
+    },
+    {
+      "id": "fact-053",
+      "reason": "Bloxed.gg claims an approximately 10,000-like cadence, but the live official pair is 940,000 to 960,000 likes, a 20,000-like gap; the claimed match is therefore incorrect."
+    },
+    {
+      "id": "fact-054",
+      "reason": "The fetched official game page did not expose the claimed Future Update event title, date, time, or countdown, so this expiring event-card claim could not be independently confirmed."
+    },
+    {
+      "id": "fact-060",
+      "reason": "The listed Fandom page returned a Cloudflare 403 challenge, so its alleged creator names could not be verified; the approved Roblox creator remains the Midnight In-dev group."
+    },
+    {
+      "id": "fact-061",
+      "reason": "The Games API supports the 2023-06-21 created timestamp but does not support the separate Fandom release-date assertion, so the compound claim is not approved as written."
+    },
+    {
+      "id": "fact-064",
+      "reason": "This is a long third-party expired-code table and is not approved for publication; code status must come from the current official description."
+    },
+    {
+      "id": "fact-065",
+      "reason": "The Games API confirms the live SUSPENSION title prefix, but it does not establish suspension as a gameplay feature or prove that no official handling description exists."
+    },
+    {
+      "id": "fact-066",
+      "reason": "The badge endpoint reports winRatePercentage as 0.011, not the claimed 1.1 percent, and it does not support the first-session expectation stated in the fact."
+    },
+    {
+      "id": "fact-067",
+      "reason": "The badge endpoint confirms a lower Win a Race award rate than Welcome!, but award-rate comparison alone does not prove that racing is optional or define the default first-session path."
+    },
+    {
+      "id": "fact-075",
+      "reason": "The Fandom page returned a Cloudflare 403 challenge and could not be independently reviewed; it remains prohibited from being presented as official or as midnight-chasers.wiki."
     }
   ],
   "notes": [
-    "Codex independently opened the listed HTTPS sources through the configured system proxy; Grok's self-reported verification was not treated as approval.",
-    "The official game identity, root place ID, universe ID, developer group, group ownership, description, classification, server cap, dates, and vote response were cross-checked against live Roblox pages and APIs.",
-    "The minimum beginner-guide gate is exceeded: approved facts include the traffic-driving loop, vehicle types, racing/exploration/meetups, the 25% group cash boost, the 50% VIP cash boost, code redemption steps, HUD location, and code-entry/expiry cautions.",
-    "The current code, next like milestone, update timestamp, and vote totals are mutable and must retain their 2026-08-19 check context rather than be presented as evergreen facts.",
-    "No Cash customisation claim, Discord code-posting claim, inferred complete map structure, or inaccessible official 100-million-visits post is approved."
+    "Codex independently requested all 75 listed source URLs through the configured system proxy; repeated URLs were reopened for each fact. Seventy-three requests returned HTTP 200, while both Fandom requests returned HTTP 403 challenges.",
+    "The publication name is Midnight Chasers: Highway Racing. The live SUSPENSION prefix is a mutable promotional title prefix and must not be used as the official name or evergreen H1.",
+    "The only approved current code is ThanksFor940k from the official game description, with the next code stated for 960000 likes. Conflicting third-party multi-code tables are not approved.",
+    "The official game-pass catalog confirms VIP 200 Robux, Track Pass 175 Robux, Police Pass 125 Robux, and Mobile Customization 75 Robux. Track and Police vehicles still require in-game currency purchases.",
+    "The minimum content gate is exceeded: official_game and developer facts are approved, along with multiple beginner gameplay and progression facts covering the driving loop, vehicle choice, social/racing activities, group boost, VIP boost, and code redemption.",
+    "Do not invent a starter vehicle or price, do not claim Diamonds as a currency, do not treat Fandom as official, and do not state a definite combined percentage for group plus VIP boosts.",
+    "Live counts, title prefixes, code milestones, prices, and dated secondary-guide details must retain their 2026-08-20 review context and must not be presented as evergreen."
   ]
 }

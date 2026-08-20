@@ -1,101 +1,119 @@
 {
   "schema_version": 1,
-  "run_id": "midnight-chasers-20260819-224500",
+  "run_id": "midnight-chasers-20260820-043000",
   "game": {
     "official_name": "Midnight Chasers: Highway Racing",
     "domain": "midnight-chasers.wiki"
   },
   "reviewed_by": "Codex",
-  "reviewed_at": "2026-08-19T19:25:00Z",
+  "reviewed_at": "2026-08-20T04:52:51Z",
   "candidate_path": "/Users/zhangtongxin/sites/midnight-chasers-kimi-candidate",
   "candidate_review": {
-    "scope": "Only the current game's app, components, public asset, and framework configuration were present; no .git directory, remote, deployment credential, or cross-game file was found.",
-    "decision": "selective_rewrite",
-    "accepted_direction": [
-      "Night Run Telemetry visual direction",
-      "Internal beginner-guide hero CTA",
-      "First-session timeline",
-      "Codes, driving loop, boosts, mistakes, and FAQ information architecture"
-    ],
-    "rejected_or_replaced": [
-      "The candidate implementation was rewritten in the formal repository to add the advanced route, production SEO, crawl files, security headers, automated checks, and deploy configuration.",
-      "No candidate deployment configuration or generated dependency cache was accepted."
+    "scope": "Only the current game's eight static HTML pages, shared CSS and JavaScript, crawl files, and original social artwork were accepted.",
+    "decision": "selective_nextjs_integration",
+    "deployment_shape": "The Kimi v3 HTML bodies are prerendered as eight Next.js routes through the existing root layout so the repository's commercial runtime remains intact.",
+    "files_accepted": [
+      "content/pages/index.html",
+      "content/pages/beginner-guide/index.html",
+      "content/pages/codes/index.html",
+      "content/pages/cash-boosts/index.html",
+      "content/pages/gamepasses/index.html",
+      "content/pages/maps/index.html",
+      "content/pages/vehicles/index.html",
+      "content/pages/faq/index.html",
+      "app/globals.css",
+      "public/app.js",
+      "public/robots.txt",
+      "public/sitemap.xml",
+      "public/og.png"
     ]
   },
   "design_package": {
-    "requested_file": ".launch/design/kimi-design-v1.json",
-    "requested_sha256": "a4d6f1edfe9a0199787d4d1c6c8dc27a7c50fcdf1ecdd877d2cf8dc14ca28d44",
-    "requested_validation": "failed: design primary CTA must lead to the beginner guide",
-    "actual_fallback_file": ".launch/design/codex-design-v1.json",
-    "actual_fallback_sha256": "11c4b581da3b8e91ba1788d804ef8a4102960ac2d59f725d762cd6b9933ac724",
-    "actual_fallback_validation": "passed",
-    "fallback_reason": "The Kimi CLI exited immediately in the design task and its design file did not satisfy the handoff schema. The recorded Codex fallback package passed the same validator."
+    "file": ".launch/design/kimi-design-v3.json",
+    "sha256": "815288fd6c24ce7b842b287fda7d12e63dc0465f8704c7f84877d9648121e042",
+    "provider": "Kimi",
+    "model": "kimi-code/k3",
+    "validation": "passed after Codex removed two unapproved fact references and the corresponding unsupported copy"
   },
   "viewports": {
     "375": {
       "status": "passed",
-      "static_review": "CSS mobile breakpoint at 560px is present; navigation collapses, hero actions stack, timeline becomes two columns, and cards become one column.",
-      "rendered_review": "Formal homepage rendered and was visually inspected at 375px. clientWidth, innerWidth, and scrollWidth were all 375, with no horizontal overflow or cutoff. The 347x59px internal beginner-guide CTA was the largest action."
+      "routes_checked": 8,
+      "rendered_review": "All eight routes rendered in a 375px viewport with clientWidth=scrollWidth=360 after the desktop scrollbar; no horizontal overflow, broken images, or browser errors were found. The mobile menu opened with aria-expanded=true and remained within the viewport.",
+      "screenshot": ".launch/acceptance/screenshots/v3-home-375.png"
     },
     "768": {
       "status": "passed",
-      "static_review": "CSS tablet breakpoint at 820px is present; hero and content sections collapse to one column while core navigation remains reachable through page links.",
-      "rendered_review": "Formal homepage rendered and was visually inspected at 768px. clientWidth, innerWidth, and scrollWidth were all 768, with no horizontal overflow or cutoff. Clicking the largest action reached https://midnight-chasers.wiki/#quick-start."
+      "routes_checked": 8,
+      "rendered_review": "All eight routes rendered in a 768px viewport with clientWidth=scrollWidth=753 after the desktop scrollbar; no horizontal overflow, broken images, or browser errors were found. The homepage hierarchy, two-column cards, and navigation remained legible.",
+      "screenshot": ".launch/acceptance/screenshots/v3-home-768.png"
     },
     "1440": {
       "status": "passed",
-      "static_review": "The 1180px content shell, two-column hero, three-card core loop, and two-column advanced route were reviewed in source.",
-      "rendered_review": "Formal homepage rendered and was visually inspected at 1440px. clientWidth, innerWidth, and scrollWidth were all 1440, with no horizontal overflow or cutoff. The 247.59x59px internal beginner-guide CTA was the largest action."
+      "routes_checked": 8,
+      "rendered_review": "All eight routes rendered in a 1440px viewport with clientWidth=scrollWidth=1425 after the desktop scrollbar; no horizontal overflow, broken images, or browser errors were found. The two-column hero and 1160px content shell preserved the intended hierarchy.",
+      "screenshot": ".launch/acceptance/screenshots/v3-home-1440.png"
     }
   },
   "primary_cta": {
-    "status": "passed_by_source_test_and_rendered_interaction",
+    "status": "passed_by_source_test_and_rendered_review",
     "label": "Start the beginner guide",
-    "target": "#quick-start",
-    "external_roblox_cta_priority": "secondary"
+    "target": "/beginner-guide/",
+    "is_internal": true
   },
   "facts": {
     "status": "passed",
-    "research_approval_sha256": "e5c36bffb2b43a1f223cfea780af77ccbf7b9921d4d09efb264083ceddbe42ff",
-    "notes": [
-      "Page copy uses approved identity, developer, gameplay, boost, server-cap, code, and code-redemption facts.",
-      "The mutable code and milestone are explicitly time-scoped to August 19, 2026.",
-      "Rejected Cash-customisation, Discord-posting, map-roster, VIP-price, boost-stacking, starter-car, and diamonds claims were not used."
+    "research_approval_sha256": "5f262933b8b5b76c684fb10bdc9dd9320029d31a9aa36d91164ab89637b7d07b",
+    "checks": [
+      "Every published H1 omits the mutable SUSPENSION title prefix.",
+      "ThanksFor940k is the only specific current code published.",
+      "Group and VIP boosts are stated separately; no combined percentage is published.",
+      "Unsupported racing-optional and award-rate inferences were removed.",
+      "The handoff validator passes against Grok v2, the Codex approval file, and Kimi v3."
     ]
   },
   "assets": {
     "status": "passed",
     "items": [
       {
-        "path": "public/og.svg",
-        "source": "Codex-generated original vector artwork",
-        "license": "original for this repository"
+        "path": "public/og.png",
+        "source": "Kimi package, generated specifically for this site's Midnight Highway design",
+        "license": "original generated artwork for this repository"
       },
       {
         "path": "app/globals.css",
-        "source": "CSS-generated night highway scene",
-        "license": "original for this repository"
+        "source": "Kimi package, CSS-only night highway scene and interface",
+        "license": "original implementation for this repository"
       }
     ],
     "third_party_assets": []
   },
   "accessibility_and_navigation": {
-    "static_status": "passed",
+    "status": "passed",
     "checks": [
-      "Semantic header, navigation, main, sections, ordered lists, details/summary, and footer are present.",
-      "A keyboard skip link and visible focus styles are present.",
-      "Reduced-motion handling is present.",
-      "Natural internal links connect quick start, core loop, advanced route, mistakes, and FAQ content."
+      "Skip links, semantic landmarks, one H1 per page, visible focus styles, and reduced-motion handling are present.",
+      "The mobile navigation updates aria-expanded and closes after navigation.",
+      "All internal links and fragments resolve across the eight-route page map.",
+      "The beginner checklist updates progress and persists completed steps when storage is available.",
+      "The code copy control is keyboard-operable and exposes a live status label."
     ]
+  },
+  "commercial_runtime": {
+    "status": "preserved",
+    "evidence": "The existing Adsterra components and runtime configuration files were not edited. Local production renders retained the root-layout ad shell on all three viewports."
   },
   "issues_and_resolution": [
     {
-      "issue": "Requested Kimi design package failed handoff validation.",
-      "resolution": "Used the recorded Codex fallback package, which passed validation; provider attribution remains Codex rather than Kimi."
+      "issue": "Kimi v3 listed fact-067 and fact-041 even though the Codex fact gate rejected both.",
+      "resolution": "Removed both IDs from the design package and rewrote the three racing passages so they rely only on approved official gameplay facts. The code page publishes only ThanksFor940k."
     },
     {
-      "issue": "Rendered checks at 375, 768, and 1440 could not be performed without the global browser lock.",
-      "resolution": "After the coordinator released the lock for this site, all three formal-domain viewports passed rendered visual and overflow checks, and the internal primary CTA was exercised."
+      "issue": "The candidate used example combined boost percentages while saying stacking was unknown.",
+      "resolution": "Removed every combined percentage example and changed the section wording to keep the group and VIP benefits explicitly separate."
+    },
+    {
+      "issue": "The formal repository previously deployed a one-page Next.js implementation.",
+      "resolution": "Migrated the eight HTML bodies into statically generated Next.js routes and kept the existing Adsterra root-layout components unchanged. All eight canonical routes come from one shared route map used by the sitemap."
     }
   ],
   "status": "approved",

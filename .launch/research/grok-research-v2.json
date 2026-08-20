@@ -1,0 +1,982 @@
+{
+  "schema_version": 1,
+  "run_id": "midnight-chasers-20260820-043000",
+  "game": {
+    "official_name": "Midnight Chasers: Highway Racing",
+    "domain": "midnight-chasers.wiki",
+    "roblox_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+    "place_id": "13822562292",
+    "universe_id": "4793836769",
+    "developer": "Midnight In-dev"
+  },
+  "provider": {
+    "name": "Grok",
+    "model": "grok-4.6",
+    "generated_at": "2026-08-20T04:30:00Z"
+  },
+  "status": "complete",
+  "expansion_note": "v2 research expansion (~3x v1). Coordinator collected official Roblox APIs plus dated secondary guides. Codex must independently re-open every source_url; do not treat this file as approved.",
+  "facts": [
+    {
+      "id": "fact-001",
+      "category": "identity",
+      "subject": "official_game",
+      "claim": "The official Roblox experience is Midnight Chasers: Highway Racing at place 13822562292. The in-page description addresses players as Welcome to Midnight Chasers.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-002",
+      "category": "identity",
+      "subject": "official_game",
+      "claim": "At this check the Games API display name is prefixed [💨SUSPENSION!], so the live listing title is promotional and should not replace the official_name Midnight Chasers: Highway Racing.",
+      "source_url": "https://games.roblox.com/v1/games?universeIds=4793836769",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-003",
+      "category": "identity",
+      "subject": "developer",
+      "claim": "The Roblox creator credit is the community Midnight In-dev (community id 16528477).",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-004",
+      "category": "identity",
+      "subject": "developer",
+      "claim": "The Midnight In-dev group description states it is the official midnight chasers development group. The group owner is Roblox user MNC_Holdingacc (userId 10746399916). Public entry is allowed. The group is not verified-badge.",
+      "source_url": "https://groups.roblox.com/v1/groups/16528477",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-005",
+      "category": "identity",
+      "subject": "place_id",
+      "claim": "The root place id is 13822562292, matching the public /games/13822562292 URL.",
+      "source_url": "https://games.roblox.com/v1/games?universeIds=4793836769",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-006",
+      "category": "identity",
+      "subject": "universe_id",
+      "claim": "The Roblox universe id for place 13822562292 is 4793836769.",
+      "source_url": "https://apis.roblox.com/universes/v1/places/13822562292/universe",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-007",
+      "category": "identity",
+      "subject": "developer",
+      "claim": "At this 2026-08-20 check the Midnight In-dev group reported about 3,243,421 members and community tier 3.",
+      "source_url": "https://groups.roblox.com/v1/groups/16528477",
+      "source_type": "creator",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-008",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Official copy describes a no-hesi / highway cut-up game whose goal is to swerve in and out of traffic with supercars, hypercars, or regular cars. Players may cut up through traffic or take a regular drive.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-009",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "The experience advertises a large vehicle choice that includes cars, motorcycles, and more.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-010",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Official features listed on the game page include racing at high speed, exploring highways and cities with friends, and hosting meetups to showcase vehicles.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-011",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "Joining the official Midnight In-dev group is advertised as granting a 25% cash boost.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-012",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "A VIP Gamepass is advertised on the game page as granting a 50% cash boost.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-013",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "Roblox Premium members are advertised as receiving an in-game tag.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-014",
+      "category": "update",
+      "subject": "update",
+      "claim": "As of this check the official game description thanks players for 940,000 likes, names the current code ThanksFor940k, and says the next code is at 960000 likes.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-015",
+      "category": "update",
+      "subject": "update",
+      "claim": "The Games API reported the universe created 2023-06-21T21:07:05.223Z and last updated 2026-08-15T22:05:27.673Z.",
+      "source_url": "https://games.roblox.com/v1/games?universeIds=4793836769",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-016",
+      "category": "identity",
+      "subject": "official_game",
+      "claim": "Roblox classifies the experience as Simulation / Vehicle Sim (also listed as Town and City), with a maximum of 14 players per server and MorphToR15 avatars.",
+      "source_url": "https://games.roblox.com/v1/games?universeIds=4793836769",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-017",
+      "category": "identity",
+      "subject": "official_game",
+      "claim": "The public game page maturity is Minimal / Suitable for everyone. Voice Chat and Camera are listed as Not Supported.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-018",
+      "category": "identity",
+      "subject": "official_game",
+      "claim": "Snapshot only for 2026-08-20: Games API reported about 5,439 playing, 299,640,340 visits, and 6,339,155 favorites.",
+      "source_url": "https://games.roblox.com/v1/games?universeIds=4793836769",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-019",
+      "category": "identity",
+      "subject": "official_game",
+      "claim": "Snapshot only for 2026-08-20: votes endpoint reported 948,420 upVotes and 24,473 downVotes, consistent with the 940k-like milestone on the game page.",
+      "source_url": "https://games.roblox.com/v1/games/votes?universeIds=4793836769",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-020",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Official badge Welcome! is awarded for joining the game for the first time. Award count at this check was about 47.6 million.",
+      "source_url": "https://badges.roblox.com/v1/universes/4793836769/badges?limit=100&sortOrder=Asc",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-021",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "Official badge Richie is awarded for acquiring 1,000,000 Money, confirming Money/Cash as a countable progression currency with a seven-figure milestone.",
+      "source_url": "https://badges.roblox.com/v1/universes/4793836769/badges?limit=100&sortOrder=Asc",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-022",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Official badge Win a Race is awarded for winning a first race, confirming organized racing is a first-class mode beside free-roam cut-up.",
+      "source_url": "https://badges.roblox.com/v1/universes/4793836769/badges?limit=100&sortOrder=Asc",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-023",
+      "category": "update",
+      "subject": "update",
+      "claim": "Official badge The Hatch is awarded for participating in The Hatch Event (created 2025-06-17). Past-day awards were 0 at this check, so it is a historical event badge.",
+      "source_url": "https://badges.roblox.com/v1/universes/4793836769/badges?limit=100&sortOrder=Asc",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-024",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "VIP game pass id 225302131 is on sale for 200 Robux. Official pass copy: 50% Cash Boost, VIP Tag, extra customization build slots, more coming soon.",
+      "source_url": "https://apis.roblox.com/game-passes/v1/universes/4793836769/game-passes?passView=Full&pageSize=50",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-025",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Track Pass id 217162956 is on sale for 175 Robux. Official copy: speed through traffic with powerful track vehicles. Disclaimer: vehicles must still be bought with in-game currency after buying the pass.",
+      "source_url": "https://apis.roblox.com/game-passes/v1/universes/4793836769/game-passes?passView=Full&pageSize=50",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-026",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Mobile Customization pass id 679120814 is on sale for 75 Robux and unlocks mobile customization for vehicles.",
+      "source_url": "https://apis.roblox.com/game-passes/v1/universes/4793836769/game-passes?passView=Full&pageSize=50",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-027",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Police Pass id 1457193259 is on sale for 125 Robux. Official copy: patrol the highway and chase racers; access to police vehicles in the dealership (SOON) and police customizations. Vehicles still cost in-game currency.",
+      "source_url": "https://apis.roblox.com/game-passes/v1/universes/4793836769/game-passes?passView=Full&pageSize=50",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-028",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Premium Nitrous pass id 852669123 exists but isForSale=false at this check. Description: Unlocks the Premium Nitrous.",
+      "source_url": "https://apis.roblox.com/game-passes/v1/universes/4793836769/game-passes?passView=Full&pageSize=50",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-029",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Starter Pack pass id 712759994 is offsale. Its stored description lists Toot Soup (or 80,000 cash if owned), 125,000 in-game cash, and a 20-minute 2x cash boost. Do not present it as currently purchasable.",
+      "source_url": "https://apis.roblox.com/game-passes/v1/universes/4793836769/game-passes?passView=Full&pageSize=50",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-030",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Two additional catalog rows are not player products: a pass named test and a Donation pass whose description is a joke/plea. Do not promote them as gameplay unlocks.",
+      "source_url": "https://apis.roblox.com/game-passes/v1/universes/4793836769/game-passes?passView=Full&pageSize=50",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-031",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "Cash is the main in-game currency used to buy and customise cars. Eurogamer and Sportskeeda both say players earn it by driving through traffic, then spend it on more expensive vehicles.",
+      "source_url": "https://www.eurogamer.net/midnight-chasers-codes",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-032",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Promo codes are redeemed in-experience by opening the Store control, choosing the Codes tab, entering a code, and pressing Redeem.",
+      "source_url": "https://www.eurogamer.net/midnight-chasers-codes",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-033",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Pocket Tactics says the Store control is a yellow icon on the left HUD, underneath Spawn.",
+      "source_url": "https://www.pockettactics.com/midnight-chasers-codes",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-034",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Destructoid instead describes a tickets button in the bottom-left, then a Codes tab and an Enter a code box. HUD wording differs across guides; players should look for Store / tickets / Codes.",
+      "source_url": "https://www.destructoid.com/midnight-chasers-highway-racing-codes/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-035",
+      "category": "mistake",
+      "subject": "mistake",
+      "claim": "Codes can fail if capitalization is wrong or if a leading/trailing space is pasted with the code. Pocket Tactics says Midnight Chasers codes are case-sensitive.",
+      "source_url": "https://www.pockettactics.com/midnight-chasers-codes",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-036",
+      "category": "mistake",
+      "subject": "mistake",
+      "claim": "Midnight Chasers codes expire. Pocket Tactics says some milestone codes last weeks and others only a few days.",
+      "source_url": "https://www.pockettactics.com/midnight-chasers-codes",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-037",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "New codes are typically posted on the official X account @MidnightIndev, in the Midnight In-dev Roblox community, and in the community Discord https://discord.com/invite/bQWFVXVqRj.",
+      "source_url": "https://www.pockettactics.com/midnight-chasers-codes",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-038",
+      "category": "identity",
+      "subject": "developer",
+      "claim": "The X account @MidnightIndev identifies itself as the official Twitter page for the Roblox game Midnight Chasers.",
+      "source_url": "https://x.com/MidnightIndev",
+      "source_type": "creator",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-039",
+      "category": "update",
+      "subject": "update",
+      "claim": "Pocket Tactics (updated 2026-08-19) listed ThanksFor940k (30k cash, new), ThanksFor920k (30k cash), and ThxFor100Mil (75k cash) as current. The official description at the same check printed only ThanksFor940k.",
+      "source_url": "https://www.pockettactics.com/midnight-chasers-codes",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-040",
+      "category": "update",
+      "subject": "update",
+      "claim": "Destructoid (updated 2026-08-17) listed only ThanksFor940k as active and moved ThanksFor920k plus a long milestone history into expired.",
+      "source_url": "https://www.destructoid.com/midnight-chasers-highway-racing-codes/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-041",
+      "category": "update",
+      "subject": "update",
+      "claim": "Official creator post for 100 million visits told players to use code ThxFor100Mil for 75,000 in-game cash, confirming cash codes as a progression shortcut.",
+      "source_url": "https://x.com/MidnightIndev/status/1966260182004150539",
+      "source_type": "creator",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-042",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "An official @MidnightIndev holiday code post stated a reward worked only on the Tokyo map, which is evidence that the experience has more than one map and that Tokyo is one of them.",
+      "source_url": "https://x.com/MidnightIndev/status/2003958221799911768",
+      "source_type": "creator",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-043",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Sportskeeda (2025-09-28) said players choose between two maps at start: Shutoko Expressway (main, more features) and Boneville Salt Flats (newer, buggier). Maps cannot be changed after a match has started.",
+      "source_url": "https://www.sportskeeda.com/roblox-news/midnight-chasers-highway-racing-a-beginner-s-guide",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-044",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Sportskeeda described Shutoko as highways, intertwined roads, and sharp bends suited to strolls and making cash, and Boneville as barren land and longer roads better for racing.",
+      "source_url": "https://www.sportskeeda.com/roblox-news/midnight-chasers-highway-racing-a-beginner-s-guide",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-045",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Sportskeeda (2025-09-28) reported a total of 155 purchasable vehicles. That count is more than nine months old and must be dated; official copy only says a large choice of cars and motorcycles.",
+      "source_url": "https://www.sportskeeda.com/roblox-news/midnight-chasers-highway-racing-a-beginner-s-guide",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "low"
+    },
+    {
+      "id": "fact-046",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Sportskeeda listed 11 customization types: Paint, Nitros, Aspiration, Tires, Brakes, Drivetrain, License Plate, Police Lights, Underglow, Suspension, and Rims. Most cost in-game cash; Police Lights were said to cost Robux. The shop sits by the Dealership at spawn.",
+      "source_url": "https://www.sportskeeda.com/roblox-news/midnight-chasers-highway-racing-a-beginner-s-guide",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-047",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Sportskeeda says the dealership is reached from the spawn button or by visiting the spawn location, and that the majority of vehicles are bought with in-game money.",
+      "source_url": "https://www.sportskeeda.com/roblox-news/midnight-chasers-highway-racing-a-beginner-s-guide",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-048",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Sportskeeda warned that switching day/night can crash the session and that night mode was poorly developed. That report is from September 2025 and may not match the current Suspension-tagged build.",
+      "source_url": "https://www.sportskeeda.com/roblox-news/midnight-chasers-highway-racing-a-beginner-s-guide",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "low"
+    },
+    {
+      "id": "fact-049",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Sportskeeda named 2018 Kenetic Nether T2W as the fastest bike (249 mph) and 2021 Konnen Sento Absolute as the fastest car (340 mph). Names are stylized, dated September 2025, and should be labeled community-reported.",
+      "source_url": "https://www.sportskeeda.com/roblox-news/midnight-chasers-highway-racing-a-beginner-s-guide",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "low"
+    },
+    {
+      "id": "fact-050",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Destructoid says playtime rewards exist: playing up to an hour and 45 minutes earns four cash rewards plus a secret fifth reward. That is separate from promo codes.",
+      "source_url": "https://www.destructoid.com/midnight-chasers-highway-racing-codes/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-051",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Destructoid incorrectly restated the group boost as 50 percent in one sidebar line; the official game page says group join is 25 percent and VIP is 50 percent. Prefer the official page if they conflict.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-052",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Destructoid describes races against up to nine other players and mentions an auto repair shop plus showcases for extra cash between races.",
+      "source_url": "https://www.destructoid.com/midnight-chasers-highway-racing-codes/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-053",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Bloxed.gg notes the ThanksFor[X]k naming pattern tracks like milestones about every 10,000 likes, which matches the official 940k / next 960k pair.",
+      "source_url": "https://bloxed.gg/games/midnight-chasers-highway-racing/codes",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-054",
+      "category": "update",
+      "subject": "update",
+      "claim": "The public game page listed a Saturday Aug 29 12:00 PM event titled Future Update! / Coming in 2 weeks. Event cards expire; date them.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-055",
+      "category": "identity",
+      "subject": "official_game",
+      "claim": "The official description includes a trademark disclaimer: other marks are their owners' property and use does not imply affiliation. Vehicle names on the site should stay stylized, not claimed as licensed.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-056",
+      "category": "mistake",
+      "subject": "mistake",
+      "claim": "Buying Track Pass or Police Pass does not gift the vehicles. Official disclaimers say you still pay in-game cash at the dealership.",
+      "source_url": "https://apis.roblox.com/game-passes/v1/universes/4793836769/game-passes?passView=Full&pageSize=50",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-057",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "VIP at 200 Robux is the official paid 50% cash-boost product. It also advertises a VIP tag and extra customization build slots, which the game-page blurb does not mention.",
+      "source_url": "https://apis.roblox.com/game-passes/v1/universes/4793836769/game-passes?passView=Full&pageSize=50",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-058",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Mobile players who cannot customize vehicles should look at the 75 Robux Mobile Customization pass rather than assuming desktop menus exist on touch.",
+      "source_url": "https://apis.roblox.com/game-passes/v1/universes/4793836769/game-passes?passView=Full&pageSize=50",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-059",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Police Pass copy still says police vehicles in the dealership are SOON, so police gameplay may be customization-first rather than a full cop fleet.",
+      "source_url": "https://apis.roblox.com/game-passes/v1/universes/4793836769/game-passes?passView=Full&pageSize=50",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-060",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Unofficial Fandom names Revurtics and Hateful as creators. The Roblox By line is the Midnight In-dev group; do not replace the group credit with those names.",
+      "source_url": "https://midnight-chasers.fandom.com/wiki/Midnight_Chasers_Wiki",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "low"
+    },
+    {
+      "id": "fact-061",
+      "category": "identity",
+      "subject": "official_game",
+      "claim": "Games API created timestamp is 2023-06-21. Unofficial Fandom says official release 13 August 2023. Do not flatten those into one launch-day fact.",
+      "source_url": "https://games.roblox.com/v1/games?universeIds=4793836769",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-062",
+      "category": "mistake",
+      "subject": "mistake",
+      "claim": "This game is not Midnight Racing: Tokyo or other similarly named Roblox driving games, even though a Tokyo map exists inside Midnight Chasers.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-063",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Pocket Tactics and Destructoid both list Discord https://discord.com/invite/bQWFVXVqRj as the community server.",
+      "source_url": "https://discord.com/invite/bQWFVXVqRj",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-064",
+      "category": "update",
+      "subject": "update",
+      "claim": "Pocket Tactics' expired list is long and includes ThanksFor900k down through older milestones plus MerryChristmas2025, GeneralKiko, and ThxFor20Mil!. Milestone codes are not permanent.",
+      "source_url": "https://www.pockettactics.com/midnight-chasers-codes",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-065",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "The current listing prefix [💨SUSPENSION!] plus Sportskeeda already naming Suspension as a customization category is the only sourced hint that suspension is a live feature. No official handling-model writeup was found.",
+      "source_url": "https://games.roblox.com/v1/games?universeIds=4793836769",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-066",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "Richie at 1,000,000 Money is a mid-game badge (about 1.1% win rate). New players should not expect it in the first session.",
+      "source_url": "https://badges.roblox.com/v1/universes/4793836769/badges?limit=100&sortOrder=Asc",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-067",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Win a Race has a much lower award rate than Welcome!, so racing is optional content rather than the default first-session path.",
+      "source_url": "https://badges.roblox.com/v1/universes/4793836769/badges?limit=100&sortOrder=Asc",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-068",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Beebom mentioned diamonds as a possible reward type; no official page or badge corroborated a diamonds currency. Do not list diamonds.",
+      "source_url": "https://beebom.com/midnight-chasers-codes/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "low"
+    },
+    {
+      "id": "fact-069",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Official copy invites both cut-up and regular drives, so the site should not shame cruising or require crashing as the only playstyle.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-070",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Canonical URL path is /games/13822562292/Midnight-Chasers-Highway-Racing. Promo prefixes in the live title change and should not be the H1.",
+      "source_url": "https://games.roblox.com/v1/games?universeIds=4793836769",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-071",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "Group 25% and VIP 50% are advertised separately. Official pages do not spell out whether they stack to 75% or combine some other way. YouTube transcripts claiming 115% were not used.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-072",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "The official description does not name a starter car or a first-buy recommendation. Any 'best first car' list is unofficial.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-073",
+      "category": "update",
+      "subject": "update",
+      "claim": "Like-milestone cadence of about 20k likes between ThanksFor940k and the next 960k target is the live official schedule at this check.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-074",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Meetups and showcases are official social features, not just racing. Destructoid also mentions showcases for extra cash.",
+      "source_url": "https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-075",
+      "category": "mistake",
+      "subject": "mistake",
+      "claim": "Do not treat midnight-chasers.fandom.com as the same property as midnight-chasers.wiki or as an official handbook.",
+      "source_url": "https://midnight-chasers.fandom.com/wiki/Midnight_Chasers_Wiki",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    }
+  ],
+  "new_player_guide": {
+    "first_10_minutes": [
+      "Open Midnight Chasers: Highway Racing at place 13822562292 (universe 4793836769). Ignore the live [💨SUSPENSION!] prefix when naming the game.",
+      "Join the Midnight In-dev group (id 16528477) so the advertised 25% cash boost can apply.",
+      "Pick a map if the start screen still offers a choice. Sportskeeda (2025) named Shutoko Expressway for cash/cruise and Boneville Salt Flats for racing; a later official post also named a Tokyo map.",
+      "Open Store (yellow left HUD under Spawn, or the tickets control some guides show bottom-left), go to Codes, redeem ThanksFor940k exactly as printed on the official description.",
+      "Do not paste extra spaces. Codes are reported as case-sensitive.",
+      "Spawn a vehicle from the dealership / spawn flow and start driving. Official goal is swerving through traffic or taking a regular drive.",
+      "Earn cash by driving and close traffic work; spend it at the dealership by spawn.",
+      "Optional paid start: VIP is 200 Robux for the advertised 50% cash boost, VIP tag, and extra build slots. Not required.",
+      "Skip Track Pass (175) and Police Pass (125) until you understand they do not gift the cars.",
+      "Mobile players who cannot open customization should know Mobile Customization is a separate 75 Robux pass.",
+      "If you want a concrete first goal besides cash, win one race for the Win a Race badge or simply explore with friends.",
+      "Watch the official description for the next like-milestone code (960000 at this check)."
+    ],
+    "core_loop": [
+      "Drive on highways and cities: cut up through traffic (no-hesi) or cruise.",
+      "Earn Cash / Money from driving, races, playtime rewards, and occasional codes.",
+      "Spend Cash at the spawn dealership on cars and motorcycles.",
+      "Customize at the shop beside the dealership (paint, nitro, tires, suspension, and other slots).",
+      "Race other players, explore with friends, and host or join meetups to show vehicles.",
+      "Join the group for the advertised 25% cash boost.",
+      "Optional VIP for the advertised 50% cash boost and extra build slots.",
+      "Redeem the current description code whenever the like milestone moves.",
+      "Repair / showcase loops exist in secondary writeups as between-race cash sinks and earners.",
+      "Maps are chosen at session start and, per Sportskeeda, cannot be swapped mid-match."
+    ],
+    "progression_path": [
+      "Session 1: group join, redeem ThanksFor940k, learn traffic without immediately buying passes.",
+      "Use starter / cheap dealership cars until cash income feels consistent.",
+      "Put cash into a vehicle you actually enjoy driving; official copy does not name a required first buy.",
+      "Add customization (suspension is currently advertised in the live title) before chasing every dealership row.",
+      "Work toward 1,000,000 Money for the Richie badge if you want a mid-game marker.",
+      "Try a race for Win a Race; racing is optional, not the only loop.",
+      "Consider VIP (200 Robux) only after the free 25% group boost is already on.",
+      "Consider Track Pass or Police Pass only if you want those catalogs; you still pay in-game cash for the vehicles.",
+      "Watch @MidnightIndev, the group, Discord, and the Roblox description for the 960k-like code and the dated Future Update event card.",
+      "Do not plan around offsale Starter Pack or Premium Nitrous unless they return to sale.",
+      "Treat Sportskeeda's 155-vehicle count and 2025 top-speed names as historical snapshots.",
+      "Keep trademark-safe language: stylized names, no claimed real-world licenses."
+    ],
+    "common_mistakes": [
+      "Skipping the Midnight In-dev group and missing the advertised 25% cash boost.",
+      "Typing codes with the wrong case or pasting extra spaces.",
+      "Using expired milestone codes copied from old articles (ThanksFor900k and friends).",
+      "Treating Pocket Tactics / Beebom / Bloxodes lists as official when they disagree with the game description.",
+      "Buying Track Pass or Police Pass expecting free cars. Official disclaimers say you still pay cash.",
+      "Stating a diamonds currency. Official systems are Cash/Money plus Robux passes.",
+      "Calling unofficial Fandom the official wiki, or confusing it with midnight-chasers.wiki.",
+      "Confusing this game with Midnight Racing: Tokyo.",
+      "Inventing a starter-car name or 'best first buy' price.",
+      "Claiming group + VIP definitely stack to a specific combined percent. Official pages do not say.",
+      "Hard-coding the [💨SUSPENSION!] prefix or the Aug 29 event card as evergreen.",
+      "Copying real-world car trademarks as if the game is licensed."
+    ],
+    "faq": [
+      "What is Midnight Chasers? A Roblox no-hesi / highway cut-up driving experience by Midnight In-dev.",
+      "Where do I play? https://www.roblox.com/games/13822562292/Midnight-Chasers-Highway-Racing (place 13822562292, universe 4793836769).",
+      "How do I redeem codes? Store / tickets > Codes > enter code > Redeem.",
+      "What is the current official code? The game description listed ThanksFor940k at this check; next listed target is 960000 likes.",
+      "How do I earn Cash besides codes? Drive through traffic, races, and playtime rewards. Group join and VIP are advertised cash boosts.",
+      "What does the group give? Official page: 25% cash boost.",
+      "What does VIP cost and give? Official catalog: 200 Robux; 50% cash boost, VIP tag, extra customization build slots.",
+      "Do Track Pass or Police Pass give free cars? No. Official disclaimers require in-game cash purchases.",
+      "Is there a 1,000,000 money badge? Yes, Richie.",
+      "Is racing required? No, but Win a Race exists. Official copy also invites regular drives and meetups.",
+      "How many maps? At least Shutoko, Boneville (Sportskeeda 2025), and Tokyo (official 2025 post). Confirm on the start screen.",
+      "Is there a Discord? Guides cite https://discord.com/invite/bQWFVXVqRj. Official X: @MidnightIndev.",
+      "Who is the Roblox creator? The Midnight In-dev group, not a single person.",
+      "Are vehicle names licensed? Official description says other trademarks belong to their owners and use does not imply affiliation."
+    ]
+  },
+  "keywords": {
+    "primary": [
+      "Midnight Chasers",
+      "Midnight Chasers Highway Racing",
+      "Midnight Chasers Roblox",
+      "midnight-chasers.wiki",
+      "Midnight Chasers guide",
+      "Midnight Chasers codes",
+      "Midnight In-dev",
+      "Midnight Chasers beginner",
+      "no hesi Roblox",
+      "highway cut up Roblox",
+      "Midnight Chasers VIP",
+      "ThanksFor940k"
+    ],
+    "secondary": [
+      "Midnight Chasers group boost",
+      "Midnight Chasers Track Pass",
+      "Midnight Chasers Police Pass",
+      "Midnight Chasers Mobile Customization",
+      "Midnight Chasers Shutoko",
+      "Midnight Chasers Boneville",
+      "Midnight Chasers Tokyo map",
+      "Midnight Chasers dealership",
+      "Midnight Chasers suspension",
+      "Midnight Chasers Richie badge",
+      "ThxFor100Mil",
+      "@MidnightIndev",
+      "Midnight Chasers Discord",
+      "Midnight Chasers motorcycles",
+      "Midnight Chasers meetups",
+      "Konnen Sento Absolute",
+      "Kenetic Nether T2W",
+      "Midnight Chasers vs Midnight Racing Tokyo"
+    ],
+    "search_intent": [
+      "midnight chasers beginner guide",
+      "midnight chasers how to redeem codes",
+      "midnight chasers ThanksFor940k",
+      "midnight chasers cash boost",
+      "midnight chasers VIP price",
+      "does midnight chasers group stack with VIP",
+      "midnight chasers Track Pass worth it",
+      "midnight chasers Police Pass",
+      "midnight chasers maps",
+      "midnight chasers fastest car",
+      "midnight chasers dealership",
+      "midnight chasers place id",
+      "how to make money in midnight chasers",
+      "midnight chasers playtime rewards",
+      "midnight chasers wiki",
+      "why midnight chasers code not working",
+      "midnight chasers first car",
+      "midnight chasers suspension update"
+    ]
+  },
+  "uncertainties": [
+    "Individual creator credit: unofficial Fandom names Revurtics and Hateful, and @MidnightIndev's bio has mentioned other handles, but the Roblox By line is the Midnight In-dev group.",
+    "Public launch day: Games API created 2023-06-21 vs Fandom official release 13 August 2023.",
+    "Complete live code list beyond the description's ThanksFor940k. Pocket Tactics still listed ThanksFor920k and ThxFor100Mil on 2026-08-19; Destructoid had already expired ThanksFor920k on 2026-08-17.",
+    "Whether group 25% and VIP 50% stack, and to what total. Official pages do not say.",
+    "Starter vehicle identity, dealership prices, and a current full car list.",
+    "Full current map roster besides Sportskeeda's 2025 pair and an official Tokyo mention.",
+    "Exact cash-earn formula, crash penalties, and AFK rules.",
+    "Whether Sportskeeda's 155-vehicle count, 11 customization slots, day/night crash warning, and top-speed names still hold after later updates.",
+    "Meaning of the [💨SUSPENSION!] prefix beyond a likely update tag / customization category.",
+    "Police vehicles still marked SOON on the Police Pass.",
+    "Beebom diamonds mention is uncorroborated.",
+    "HUD control for codes: yellow Store under Spawn vs tickets bottom-left.",
+    "Live CCU, visits, likes, and favorites change constantly."
+  ],
+  "forbidden_claims": [
+    "Do not treat midnight-chasers.fandom.com as an official wiki or as the same property as midnight-chasers.wiki.",
+    "Do not list a full always-working code table; codes expire and secondary lists already conflict.",
+    "Do not invent starter-car names, prices, or 'best first buy' recommendations.",
+    "Do not claim a diamonds currency.",
+    "Do not credit a single person as the Roblox creator; the listed creator is the Midnight In-dev group.",
+    "Do not confuse this game with Midnight Racing Tokyo or other similarly named driving games.",
+    "Do not copy long passages from the Roblox description or third-party guides into site copy.",
+    "Do not present visit/favorite counts as evergreen.",
+    "Do not claim Track Pass or Police Pass grant free vehicles.",
+    "Do not state a combined group+VIP percent.",
+    "Do not present real-world car brands as licensed.",
+    "Do not present offsale Starter Pack or Premium Nitrous as currently purchasable."
+  ],
+  "suggested_topics": [
+    "First 10 minutes: join group, redeem description code, spawn, start cutting traffic",
+    "How to redeem Midnight Chasers codes (Store / tickets > Codes)",
+    "Current official like-milestone code and why blog lists disagree",
+    "Cash boosts: 25% group vs 50% VIP, stacking unknown",
+    "Official gamepass catalog with 2026-08-20 prices and disclaimers",
+    "Track Pass and Police Pass do not gift cars",
+    "Mobile Customization pass for touch players",
+    "Core loop: drive / cut up / earn Cash / buy and customise",
+    "Maps: Shutoko, Boneville, Tokyo — dated sources",
+    "Dealership and 11 customization categories including Suspension",
+    "Badges: Welcome, Richie (1M), Win a Race, The Hatch",
+    "Playtime rewards as a second free-cash path",
+    "Races, meetups, and showcases as social loops",
+    "Trademark-safe vehicle naming",
+    "Official identity: IDs, Midnight In-dev, @MidnightIndev, Discord",
+    "Why codes fail: case, spaces, expiry, unofficial lists",
+    "How this game differs from Midnight Racing: Tokyo",
+    "Dated Future Update / Suspension tag as news, not evergreen H1"
+  ],
+  "suggested_page_map": [
+    {
+      "path": "/",
+      "purpose": "Hub: no-hesi loop, group 25%, CTA to beginner guide"
+    },
+    {
+      "path": "/beginner-guide",
+      "purpose": "Group join, spawn, first drive, dealership"
+    },
+    {
+      "path": "/codes",
+      "purpose": "ThanksFor940k + next 960k; conflicting blog lists dated"
+    },
+    {
+      "path": "/cash-boosts",
+      "purpose": "Group 25%, VIP 200 Robux / 50%, stacking unknown"
+    },
+    {
+      "path": "/gamepasses",
+      "purpose": "VIP, Track, Police, Mobile, offsale packs"
+    },
+    {
+      "path": "/maps",
+      "purpose": "Shutoko / Boneville / Tokyo with date stamps"
+    },
+    {
+      "path": "/vehicles",
+      "purpose": "Cars + bikes, customization, trademark disclaimer"
+    },
+    {
+      "path": "/faq",
+      "purpose": "IDs, badges, Discord, not Midnight Racing Tokyo"
+    }
+  ]
+}

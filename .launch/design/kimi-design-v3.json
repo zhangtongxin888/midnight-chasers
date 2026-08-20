@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "run_id": "midnight-chasers-20260820-043000",
+  "game": {
+    "official_name": "Midnight Chasers: Highway Racing",
+    "domain": "midnight-chasers.wiki"
+  },
+  "provider": {
+    "name": "Kimi",
+    "model": "kimi-code/k3",
+    "generated_at": "2026-08-20T03:52:00Z"
+  },
+  "research_approval_sha256": "5f262933b8b5b76c684fb10bdc9dd9320029d31a9aa36d91164ab89637b7d07b",
+  "status": "ready_for_review",
+  "supersedes": ".launch/design/codex-design-v1.json",
+  "design_system": {
+    "theme": "Midnight Highway — full dark-theme night-driving identity: deep navy asphalt backgrounds, neon cyan and magenta glow accents, headlight amber; clearly distinct from the warm farm and khaki military candidate sites",
+    "palette": {
+      "bg": "#0b0e1d",
+      "panel": "#151a33",
+      "panel_2": "#1b2140",
+      "ink": "#eef0ff",
+      "muted": "#9aa0c8",
+      "neon": "#35e0ff",
+      "magenta": "#ff3d81",
+      "amber": "#ffd23d"
+    },
+    "font_strategy": "Arial Black / Arial Rounded MT Bold / Trebuchet MS display fallbacks, system sans for body; no external font dependency.",
+    "signature_elements": [
+      "CSS-only night highway hero scene: star field, city skyline silhouette, perspective road with animated lane dashes, swaying neon car with magenta taillight, oncoming amber headlights",
+      "Glow-based depth (soft neon glows) instead of the hard offset shadows used on the other candidate sites",
+      "Codes band with amber code chip and next-milestone note (960000 likes)",
+      "Tap-to-copy code card on /codes/",
+      "Offsale tags and price tags on the gamepass catalog table",
+      "Neon-gradient top-border map cards",
+      "PIL-generated og.png (1200x630) matching the night highway theme"
+    ],
+    "responsive_rules": [
+      "375px: single column, full-width CTAs, hamburger nav, scene car scaled, boost chip hidden, tables scroll inside wrapper only",
+      "768px: single-column hero, two-column grids, non-sticky guide contents",
+      "1440px: 1160px content shell, two-column hero, three/four-column grids",
+      "html/body overflow-x: clip; verified scrollWidth === viewport width at 375/768/1440 on all 8 pages (24/24)",
+      "prefers-reduced-motion disables road/car animations"
+    ]
+  },
+  "homepage": {
+    "hero": {
+      "badge": "Roblox · Vehicle Sim · by Midnight In-dev",
+      "headline": "Own the midnight highway.",
+      "primary_cta": {
+        "label": "Start the beginner guide →",
+        "target": "/beginner-guide/",
+        "is_internal": true
+      },
+      "secondary_cta": {
+        "label": "See the core loop",
+        "target": "#core-loop"
+      }
+    },
+    "sections": [
+      {"id": "explore", "title": "Every system, one page each.", "purpose": "Directory grid to all system pages."},
+      {"id": "core-loop", "title": "Drive, earn, buy, repeat.", "purpose": "Drive traffic, earn cash, dealership, customization."},
+      {"id": "codes-band", "title": "One code is official right now.", "purpose": "ThanksFor940k spotlight with next milestone at 960000 likes."},
+      {"id": "progression", "title": "From stock ride to street legend.", "purpose": "Free boosts, learn traffic, build ride, chase milestones."},
+      {"id": "mistakes", "title": "Four ways new drivers stall.", "purpose": "Skipping group boost, passes-don't-gift-cars, code typos, stale lists."},
+      {"id": "faq", "title": "Midnight Chasers FAQ.", "purpose": "Teaser accordions linking to /faq/."}
+    ]
+  },
+  "page_map": [
+    {"path": "/", "purpose": "Hub: night highway hero, directory, core loop, code spotlight, progression, mistakes, FAQ teaser."},
+    {"path": "/beginner-guide/", "purpose": "First 10 minutes: 5-step localStorage checklist (group boost, redeem code, first spawn, first drive, first goals) plus next-reads and beginner FAQ."},
+    {"path": "/codes/", "purpose": "ThanksFor940k with copy button, next milestone 960000 likes, Store>Codes redeem steps, why blog lists disagree, playtime rewards."},
+    {"path": "/cash-boosts/", "purpose": "Group 25% free vs VIP 50% (200 Robux) table, stacking officially unknown, Premium tag, cash-source overview."},
+    {"path": "/gamepasses/", "purpose": "On-sale catalog (VIP 200, Track 175, Police 125, Mobile 75) with no-free-cars disclaimer, offsale passes, who each suits."},
+    {"path": "/maps/", "purpose": "Shutoko (cruise/cash), Boneville (racing), Tokyo (official mention) — all date-stamped; no mid-match swap."},
+    {"path": "/vehicles/", "purpose": "Dealership flow, 11 customization categories, dated 155-count and fastest-name snapshots, trademark-safe naming."},
+    {"path": "/faq/", "purpose": "Identity card (name without SUSPENSION prefix, IDs, Midnight In-dev, genre, 14 players), gameplay/codes/community accordions, Midnight Racing: Tokyo distinction."}
+  ],
+  "approved_fact_ids_used": [
+    "fact-001", "fact-002", "fact-003", "fact-004", "fact-005", "fact-006", "fact-008", "fact-009",
+    "fact-010", "fact-011", "fact-012", "fact-013", "fact-014", "fact-015", "fact-016", "fact-020",
+    "fact-021", "fact-022", "fact-023", "fact-024", "fact-025", "fact-026", "fact-027", "fact-028",
+    "fact-029", "fact-032", "fact-033", "fact-034", "fact-035", "fact-036", "fact-038", "fact-043",
+    "fact-044", "fact-045", "fact-046", "fact-047", "fact-048", "fact-049", "fact-050", "fact-051",
+    "fact-052", "fact-055", "fact-056", "fact-057", "fact-058", "fact-059", "fact-062", "fact-063",
+    "fact-069", "fact-070", "fact-071", "fact-072", "fact-073", "fact-074"
+  ],
+  "fact_usage_policy": {
+    "review_date_label": "Facts checked August 20, 2026",
+    "official_code_highlighted": "ThanksFor940k (next milestone: 960000 likes)",
+    "excluded_claims": [
+      "Any code besides ThanksFor940k as current (third-party multi-code tables referenced only as conflicting dated snapshots)",
+      "A Diamonds currency (not mentioned anywhere)",
+      "A definite combined group+VIP stacking percentage",
+      "Track/Police Pass gifting vehicles (always paired with the still-costs-cash disclaimer)",
+      "A starter car name or best-first-buy price",
+      "SUSPENSION as H1 or official name; prefix shown only as a mutable title tag",
+      "Live CCU/visits/votes/member counts",
+      "Offsale Starter Pack / Premium Nitrous as purchasable",
+      "Fandom as official or as this site",
+      "Vehicle count or fastest names as current (presented only as dated September 2025 snapshots)"
+    ],
+    "external_links": "Only the official Roblox game page is linked; Discord and X handles appear as plain text only.",
+    "mutable_data_rule": "Codes, milestones, pass prices/sale status, map roster, and update tags always carry the 2026-08-20 check date and an in-game confirmation prompt."
+  },
+  "files_changed": [
+    "public/index.html",
+    "public/beginner-guide/index.html",
+    "public/codes/index.html",
+    "public/cash-boosts/index.html",
+    "public/gamepasses/index.html",
+    "public/maps/index.html",
+    "public/vehicles/index.html",
+    "public/faq/index.html",
+    "public/styles.css",
+    "public/app.js",
+    "public/robots.txt",
+    "public/sitemap.xml",
+    "public/og.png",
+    ".launch/design/kimi-design-v3.json"
+  ],
+  "validation_targets": {
+    "viewports": [375, 768, 1440],
+    "no_horizontal_scroll": true,
+    "primary_cta_is_internal": true,
+    "primary_cta_target": "/beginner-guide/ or #quick-start",
+    "checks_run": [
+      "Headless browser: scrollWidth === innerWidth for all 8 pages at 375, 768, 1440 (24/24) — passed",
+      "All 8 routes load on the static preview server (port 4175) — passed",
+      "Screenshots: .launch/design/v3-mc-home-1440.jpeg, v3-mc-home-375.jpeg, v3-mc-passes-768.jpeg"
+    ]
+  },
+  "preview_command": "python3 -m http.server 4175 --directory public"
+}

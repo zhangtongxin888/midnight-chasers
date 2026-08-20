@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "lint": "eslint .",
+    "lint": "eslint . && node scripts/lint.mjs",
     "typecheck": "tsc --noEmit",
     "test": "node --test tests/site.test.mjs",
     "build": "next build",
