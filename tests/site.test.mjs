@@ -28,7 +28,7 @@ test("the largest homepage CTA opens the internal beginner guide", async () => {
 test("only the approved current code is published", async () => {
   const sources = await Promise.all(pages.map(({ file }) => readFile(path.join(contentRoot, file), "utf8")));
   const combined = sources.join("\n");
-  assert.match(combined, /ThanksFor980k/);
+  assert.match(combined, /ThanksFor990k/);
   assert.doesNotMatch(combined, /\b(?:ThanksFor920k|ThxFor100Mil|MerryChristmas2025|GeneralKiko|ThxFor20Mil)\b/i);
 });
 
